@@ -1,0 +1,2300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03A12F3617BB6913560AFC5F117457EE /* DoubleInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3936478628FC65BBB91296639A3817E2 /* DoubleInterpolation.swift */; };
+		0421A9624B52C7DCE7F5B71C57BA1EEC /* TransformAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE4F8CEA2B0E4936914F2376FC69221 /* TransformAnimation.swift */; };
+		0C7EA92E4512A4E5836979E215B69030 /* ContentsAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D6ECCBB31FD1A5FEB07B61493057DB /* ContentsAnimation.swift */; };
+		0F6ADBE36FDB8EB63425EF4A08EDA465 /* PathBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA99B0C02F8160D8014ED3CB20FA7E /* PathBounds.swift */; };
+		10C38619E4B81DC39D37C5EF60C339B2 /* RenderContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5199CA577FEC6E2E15323823A451D699 /* RenderContext.swift */; };
+		118CB3B1F2F1D5FAA33A19A81FE8D729 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169CD70FEC8BB4A6E2D9E06D7E59619C /* Group.swift */; };
+		11E3E749D04EBCD8BF012782A6E5FCEB /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17497DEEB230616918F7B12EBD91AE72 /* ImageRenderer.swift */; };
+		12176484E4E674068518AC957D48C95B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D45DBADEF48A807641C6B5047D33D3 /* Foundation.framework */; };
+		127E98B71754AC9BED137E35BA6397B7 /* Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A3B828DB044CBD40D995A4EE0010BB /* Insets.swift */; };
+		12D435FA97183D7E476141512494B966 /* MorphingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E25D925B7299C5F1BCF9554D2BEA440 /* MorphingAnimation.swift */; };
+		12DF161C87B82952BE9AD390BCDF5CD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D45DBADEF48A807641C6B5047D33D3 /* Foundation.framework */; };
+		145536189C1150DBCA7F980604C29DE9 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 639B0CAAC754055AE9C678267683A7C7 /* NSArray+MASAdditions.m */; };
+		1478DC2AE9484A35D9A52E44EB4B0CFD /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = EB48375A91D372E2BEEEA3B491C38E4B /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14D60D17F59626603278EE66006192FC /* FuncBounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF29602A60769D78000335590726AB2 /* FuncBounds.swift */; };
+		171D8DA5D8C158E08D3D114CB5A3DAB5 /* MDisplayLink_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F43CA01D6D27783D2B6954F77221043 /* MDisplayLink_macOS.swift */; };
+		177C34618EAD9D7D1F558C208D958A8D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA675B9E25C7EC77655F4912D88E994 /* Image.swift */; };
+		184E6875F3C7C1CE41654FC2D8625462 /* AnimationProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076F2C1F3E091F94F1DA6BF504F9DD3 /* AnimationProducer.swift */; };
+		18853E3FB0D20AA17CCD3103BD895D7D /* CSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389136D67C8CE2920A977D9922866725 /* CSSParser.swift */; };
+		1B22A0634F53BB054CB4BEF079757D67 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A3DFEFB170AA980212C9453610824C /* SWXMLHash.framework */; };
+		1C453D96CF2A084B12E1827A6EA888C5 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C2BDB6017424D13E164E0DCB092E565 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CFD153C1663E326439E29886F46265B /* RAMBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC146899A05D6A8BEFFC7AA8B624FA8B /* RAMBadge.swift */; };
+		1DA6F9819C1264ECA32B75BCE3BDE653 /* MCAShapeLayerLineCap_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299215E5C7CE2F8D5E690476B533B1A3 /* MCAShapeLayerLineCap_iOS.swift */; };
+		1DFA790759D8A35902015F8E4AD80122 /* GaussianBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A6D2E5142DEF9104AF10B80FDDC99 /* GaussianBlur.swift */; };
+		2114F31C6AAFF39BD75C39D0733B4179 /* PanEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B3387ACE1375B39E248AEA2CA089F /* PanEvent.swift */; };
+		240E910628ACFB7242AC857DBA3B2224 /* Common_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF91D8AAC5943158A0A5A985EBE34F2 /* Common_iOS.swift */; };
+		24E92DAF0095BBC9E1FEAAF75FB64839 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15593F4907A9545E128BCC99B4A361 /* Animation.swift */; };
+		2BB0529A95B3E5938B9494AA5E6D8D42 /* BlendEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2805D2CC34DE7A7E24ED2B1445C11740 /* BlendEffect.swift */; };
+		2BB2F32E052CB7E989CC0031472271D7 /* AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27228199C9F15329C3702C2BB65054DE /* AspectRatio.swift */; };
+		2CAF0579F575E6332AABFC4D9D1AB1D7 /* MCAMediaTimingFillMode_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC3B549079171083E2D0ADD52B56E7 /* MCAMediaTimingFillMode_iOS.swift */; };
+		2D3DB9A18C7162465C4B66E2339A093A /* MCAShapeLayerLineJoin_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B3638077B98CA57E017BA877A51B18 /* MCAShapeLayerLineJoin_iOS.swift */; };
+		2E6441A1D2B711E6BAECDB6518650D4A /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9209782EB38D82C8C66465417EEE9B /* Align.swift */; };
+		2F3C24387373062366D6E41120609328 /* SVGParserRegexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A63E8B3E17275024C3A188576F7B45 /* SVGParserRegexHelper.swift */; };
+		321C257860E001BA0E27C44AACA193D3 /* UIImage2Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC0A59C6D418594CFBC63DE45AFD879 /* UIImage2Image.swift */; };
+		3808E04CA9CDF5B1644D69F6447FCC88 /* XMLIndexer+XMLIndexerDeserializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CD52287888354C14568E4A4EDE305B /* XMLIndexer+XMLIndexerDeserializable.swift */; };
+		39189585BABBA68DEFB62017A899C3A2 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CCE2620A7204538F708331400D5F5C9 /* MASViewConstraint.m */; };
+		3C6565CBA60F83D4BDD9A1A61D66B37D /* MDisplayLink_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AD680CF6AF612A4AF14DD23609BA99 /* MDisplayLink_iOS.swift */; };
+		3D2352BBB389D44066072CEA703DFDEF /* AnimationImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039DDAC686B23DFB09891C027A7E8B72 /* AnimationImpl.swift */; };
+		3E5E44DDE7FA80DDBCD5B03A6FF5B541 /* AlphaEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C31DB89060840BF598E81CE2F4994D /* AlphaEffect.swift */; };
+		3E75FB7F259E616EBEFADF34B03D0CA1 /* SVGConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC1776198C6DC68DA91BB0F39C0C679 /* SVGConstants.swift */; };
+		3EE8BE876F001384103E58ADB0815E12 /* OpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EA797DF50440BE3940AB45DE69C390 /* OpacityAnimation.swift */; };
+		40163483253DF5B623C872F9D083BA3E /* FanMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C7B708FE9A12669F7C094BD84A26C02 /* FanMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4205E4544A8F0DF171037CE730C23600 /* RAMFumeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37B9AD76A5FCB11855866B51CB82508 /* RAMFumeAnimation.swift */; };
+		48C3F2B33734B01C6EC07BF96E3E4B76 /* Pods-ManufactureApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C0F0B1134960AA98016365A869E55 /* Pods-ManufactureApp-dummy.m */; };
+		4A8823039DA52707783E5C00B58F57C9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7468338EB7A4DC95F1FEA5520EBABF89 /* Color.swift */; };
+		4B0FD378A41651D8B8B0D9C0703118C7 /* LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504C92ED208EAB56E44A2A7BFF93F1E8 /* LinearGradient.swift */; };
+		4C10BAECD53254D153DC9398A1A134E7 /* RadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA26D8C5BDD279B09406792EEBDEF7 /* RadialGradient.swift */; };
+		4E262696A710809AA32AE28F2C409CD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB32C1648A535B788EC481E17EE825 /* UIKit.framework */; };
+		53BA8AA1F8932B3CA97ACB37F1C374FD /* BATabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AD024D253A06C91F1C19007C47E5C8 /* BATabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556A1D19563F913D8F1A70779C595621 /* OpacityGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7561BE076BF883F405B75F57B3D76107 /* OpacityGenerator.swift */; };
+		55B9431C54C148F54D0BE7412C18442B /* Interpolable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858DA53EA07FE08E6783C40F47B506F /* Interpolable.swift */; };
+		56704BCDAC4F5665D732D465CED832EC /* MView_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06828CA57E9C10C9B5EAA3BFEF054CAE /* MView_iOS.swift */; };
+		57765BAFB040F6735441AB67E7E79B9F /* RAMItemAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72823AB2E754BF6C14EA7FB21EC443A7 /* RAMItemAnimationProtocol.swift */; };
+		5790614C5ECB704437010E53EC1C9445 /* TextRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000F2140A1234DBA06E0EF6A66B200 /* TextRenderer.swift */; };
+		5A4088FD6423484DA645336A082839A0 /* ShapeLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B70061A8ACBD4F7F95DBC029F86565A /* ShapeLayer.swift */; };
+		5C0DA31CACF3F1DD19A27D5AD506CAEC /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CF079CBFC1163293B906F7D535712E7 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CAF0332C05C46A27FB69DBFD539FC4C /* TransformHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352E8FA4AB08935F720B1CE413F33313 /* TransformHashable.swift */; };
+		5D44C77EBA71600833897E67DA5A3FDB /* LineJoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA99999757241D033B22877F5CE7723 /* LineJoin.swift */; };
+		5DA65715BCB583221AC37F6BC5AA6D57 /* PathSegmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72994687692BE3180379282738A9D5A /* PathSegmentType.swift */; };
+		5EECDAC282E3F72E6CCB34F8856DD911 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 49A328E4E3BF98DF2EAB8B2803D92894 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F9662965A0E39AA56C9E5D50D7EE75B /* ShapeAnimationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AD6ED044E0F8C11F7EAEF43433849A /* ShapeAnimationGenerator.swift */; };
+		619AC98C733104F58DB4697AE953697C /* CombinationAnimationGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EA02C79A6321789F6DEF2F8B51B090 /* CombinationAnimationGenerator.swift */; };
+		62F5728C6A4DFBF7008A3BF9FBF9E9E5 /* ShapeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3BDB2B0532774236948ED87DC4A87C /* ShapeRenderer.swift */; };
+		6339CFCF5CD7C37BC537310175298CCE /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7247E0774526FF307897CD2B9A9D01 /* MASViewAttribute.m */; };
+		643DB55DBCEAB9D5A96C66414F6B959A /* UIColor+ColorWithHex.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF371864BACE82970DD3552653F1B1C /* UIColor+ColorWithHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64804C35CFA3C8E455D6DB0321E610D9 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F2957AC486371332C00F142A297260 /* MASLayoutConstraint.m */; };
+		661D1B51CE80A6899658663ACAB92CC2 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = F9444D04370477C86AE42E4D6F1A1D78 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E659E18AEBF2CB324E6D116E050BC0 /* RoundRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B98A7F5DD0CE556ABCC7F9B1328CE /* RoundRect.swift */; };
+		682BD4F6D991D5BCDF975B12E0B953A2 /* MCAMediaTimingFunctionName_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C302778EC77A884BAD65A05D4851D0 /* MCAMediaTimingFunctionName_macOS.swift */; };
+		6B9830711C0154E313A59EBBE8F4186A /* BATabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 73664E07DEEAD794EBD13132DCD98C57 /* BATabBarItem.m */; };
+		6CF1E665A060A791D5A524738FBFA2CD /* NodeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7041C9BF92ED1685C6E27BB61115B32B /* NodeRenderer.swift */; };
+		6D55632BD7778932124A08DE6A603C12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D45DBADEF48A807641C6B5047D33D3 /* Foundation.framework */; };
+		6DC158285A40A054960C402F3E49A0C2 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EB471E7B4392C23BB2A56B2D091661 /* Event.swift */; };
+		6E8B63056B4C1937D6CF280E697E8235 /* NSTimer+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B81971C5B407EE5199B4BF962A926BF /* NSTimer+Closure.swift */; };
+		6ED57C551B213DC38B3396F2B3A7272A /* SVGSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018D998EFEC1B2BBE89D905EC13F87C7 /* SVGSerializer.swift */; };
+		6FFBC620B661DFF2DE1CEA73ECC715B9 /* BoundsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F840B31C6C1E4354E57C90332BA17A2 /* BoundsUtils.swift */; };
+		70D148CEA812F83AC7267CB1D75B9B5F /* TransformedLocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAFA5AB438A23D641A01ACFAD08CBC2 /* TransformedLocus.swift */; };
+		70D8FFCA9ACE9F8254E80B1795E28646 /* PinchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C8DC3882BDF528677E3E56861B007 /* PinchEvent.swift */; };
+		7279055A35E664176F4A33ACE2954877 /* GroupRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E3400003ADB98DFCF6CDE7B55451A2 /* GroupRenderer.swift */; };
+		734E845B512983B38AEAA8EE2206E4C0 /* MCAMediaTimingFunctionName_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05DE7A4BE721A1BBAB0327BDE4303B4 /* MCAMediaTimingFunctionName_iOS.swift */; };
+		7539C104C026AF8784D77F92F24AF612 /* CombineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2475C8DA34F4E4C9FE945C559A83F74 /* CombineAnimation.swift */; };
+		757EE7E494F4E17615D0467A48A391B2 /* BATabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = E6AA4EF04618132B4B049CFCB84BE93C /* BATabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758340F6F0B92E61ABAF9A4DB0891836 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F4380F444C55915755CA85ECD6D703 /* Path.swift */; };
+		76E3BC520E35B64721D841FCD0F2CFCA /* AnimationSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA24CEFBD2044EE6572BAC58CBFAA83B /* AnimationSequence.swift */; };
+		7759F392B2810A5C5F026A284F356EA8 /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90FE67F9E1B645875B90CB4D1F6E87 /* SVGView.swift */; };
+		78E77BCD76C447B700C31545DD6FD55C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F031CD9C30248170BDE34537BC4A61 /* ViewController+MASAdditions.m */; };
+		790836E1F79B9EEF8078C69CCAAAB397 /* BATabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BF821DC966D82670CBC371CCF3791AE /* BATabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		796F9FB997E532C0268F2386B64E26DB /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 59FBF8A72189D0B485ED7F3F280C82F2 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A81772DDFCC416A109E67BC830E7500 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0F48108500DD982C794D32AFF597C4 /* SWXMLHash.swift */; };
+		7A9AD34B4883B4824C5E37700D7E00B0 /* MCAShapeLayerLineCap_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C238E98E45D5499F53FC5B665DBFDF /* MCAShapeLayerLineCap_macOS.swift */; };
+		7AEA4AFDEA41E13242991EEE319876DA /* GroupDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123B4A453E6665961F00474E7101C731 /* GroupDisposable.swift */; };
+		7B944CE19A3989044C7052670612E7FD /* Macaw-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF45A7378DAA8767F7817658D9BA0E39 /* Macaw-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C7870A63D1631A4282B7744CC1531CD /* ShapeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F065AFF38CCB73E76EC6D95A5ED39 /* ShapeAnimation.swift */; };
+		7D305408274B0A435C1A9E8C3A48CA38 /* StrokeInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EA0292C0594A1E84DB8018C7F9F69E /* StrokeInterpolation.swift */; };
+		7D3EAE454BB00370786C8BFCFBF30883 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ABFA9373D30D3423ADEEBA57FDA3AF /* Masonry.framework */; };
+		8013F896FC2ADA356ADD7C029DFD75A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D45DBADEF48A807641C6B5047D33D3 /* Foundation.framework */; };
+		81758D1E82020201E60B26DDEF72FE8B /* MacawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A910331FF03A5B2590E7E69550B6AF1F /* MacawView.swift */; };
+		818042DE51346A6DAEE3C225F5CC1838 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EB24586AFE339598C7735731D5E877 /* Disposable.swift */; };
+		8222CB97B22B6F08A859FD02A16E03E9 /* GeomUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FAD99E79992344C23BE9ADA83555F9 /* GeomUtils.swift */; };
+		83EB8DAA58EC3190A713B68AFFD6C1D3 /* SWXMLHash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1CA307B8B8ACF78977FA24B1E381E /* SWXMLHash-dummy.m */; };
+		8624375B8663AD56CA95409051844096 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52989657C770DA00B147116E4966144B /* Gradient.swift */; };
+		87756868E152C6578756E8A83D4128BC /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ED24E3F3BF8883C0859981DCF05F5D /* Stroke.swift */; };
+		8824A878A156B4021CBCCB0EA5108B87 /* Graphics_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CF97869F8A99BFDB07AAA0C32C4733 /* Graphics_macOS.swift */; };
+		8B093364077D4C307EEF3B6AC4AAB2D4 /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E19D9360043259F6A62EDA1F122B9 /* shim.swift */; };
+		8CE54B68AD9CEBD8A8BCED2C4EDDE2C1 /* AnimatableVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A636D17C9FFC571A7FC17F7DBB6B53 /* AnimatableVariable.swift */; };
+		8D2EEF71466ACD10CA973985F47D10A6 /* Touchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C087C3E0B3CFB192EDA91DB277D00B /* Touchable.swift */; };
+		905F6A52DD44DFEFB1E1D5313AFD2086 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288E767A8C1F61818BF3965F58421A /* MASConstraint.m */; };
+		9107E554AF648893C2AC5DB880D4E527 /* RAMBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743802298E401B3B42A34BCB5C6ADF2 /* RAMBounceAnimation.swift */; };
+		91ECB587633F13DCE331EBFAE4035ED4 /* RotateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D6A80B96127060E05B5FF830523EF3 /* RotateEvent.swift */; };
+		95161EBFFD533EF18C9DBEA037C0192B /* CAAnimationClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE804D4506E058135E610324D11858C6 /* CAAnimationClosure.swift */; };
+		9544129F2D86873CC20F07529A84408D /* PathSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D461ACAA3098F919459CA3C44ABD38 /* PathSegment.swift */; };
+		97EC69146A2CD2F32A50257439CCE335 /* Ellipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C28E20C0F5825CD1D46CAE0F5B650F4 /* Ellipse.swift */; };
+		982A69C912E76A12EA9093BB9C36A5A9 /* Macaw-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B746F5CD9C8FFEC1FAC26EC2927DE5 /* Macaw-dummy.m */; };
+		98B7A5175EBBEF35AF9993AAB2191A98 /* MView_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD2A70447A22F0CB52B6C1D2D0DBAC /* MView_macOS.swift */; };
+		994EDC3A6CC2180F5CB110489230D8E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB32C1648A535B788EC481E17EE825 /* UIKit.framework */; };
+		9A4E4AF00E56E637692F08BCE4AFA773 /* SWXMLHash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F063FC753659D5E77166799606ABA31 /* SWXMLHash-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BBF35C0D14578DE9905F3C662B33058 /* ShapeInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCD4200179B2B45BFF7EDC19DE48F0 /* ShapeInterpolation.swift */; };
+		9C82759D328C0FA1756FB1DB2DA52EE5 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D55E5E78D6E039830B966EFFE5109 /* Circle.swift */; };
+		9D0C03502C9F317EDC55015615453002 /* SVGNodeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20115646D7C652FB84F0B026E3916FCB /* SVGNodeLayout.swift */; };
+		9EE93965C398C16CD6C6F196EF930F28 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9FE2C20265F1CC6DEC59BA1E3B975 /* Text.swift */; };
+		9F0EB838CDAFFFC6D20A06BDFC2B48C8 /* MDisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB1F5F6AE3000DF54BC2FF84272F99 /* MDisplayLink.swift */; };
+		9F7352FEDDD1906A2D966BF18FCFBC03 /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737C0D77B8B3CF00662C99A75D111AF3 /* TimingFunction.swift */; };
+		9F7C8FD411AE5AC21B16DB6C93592EAB /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDE2B55904A67B42B04FEF0F82A9C57 /* Masonry-dummy.m */; };
+		9FD07B7C3BFECAC265F38718D6449809 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 64204A8E0112E8B99AEEF17B7425B6B0 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FEFC3902DA8E97D4F5B5A217A890F9F /* ContentLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF3D9EA47F7B9ACF737CE93BCD2E /* ContentLayout.swift */; };
+		A0863BB256A6F36AFF1CA48C03408A8F /* RenderUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A235609A9958BD1B9FBCF8C70D672C /* RenderUtils.swift */; };
+		A21081E4DB1D75784C7BE0D2B9439B46 /* Common_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8FCC7E0BBC6367D53CDB6C4444C69B /* Common_macOS.swift */; };
+		A2925C34FA67EC3A6AFB701169CAA4F0 /* ContentsInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F476E0E29DD7E53AACA83D079AC7B745 /* ContentsInterpolation.swift */; };
+		A2F33BF35422C32793981E052C7B2483 /* Locus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0004EC0FC3133FE31383D4A8DEF62F09 /* Locus.swift */; };
+		A40B920B2FF4B13E64BCD2FC9684B73E /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C436464A5E50C1D43F948C85451D12D4 /* Shape.swift */; };
+		A501760CE2AE5B176B4CD57CAA124D26 /* LineCap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB35661C03D82F07651C71F131EA244D /* LineCap.swift */; };
+		A50EF4AAF1B92759A0EAC03D993F5147 /* Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636AFE37C72646313F11D34CD6677683 /* Rect.swift */; };
+		A7D29CF4CF82EE4250D277A22D4F40E8 /* Pods-ManufactureApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B71DEAA782A3FDFF201A2C6505D2ECC4 /* Pods-ManufactureApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F3092CFF1A81FAF376F2100F85CEC3 /* RAMAnimatedTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9424EADCD05463EF2AD687A060120A /* RAMAnimatedTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA38EB3D5B3D765ACC8452056FB11D8C /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72AF4970E5F48F1ED09A5CB4F764853 /* Line.swift */; };
+		AC137CAD673FF642CEF708BCB1406619 /* ColorMatrixEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F2FE6B7D33F4367F043145F3B6DE2E /* ColorMatrixEffect.swift */; };
+		ACA1ECBB4211177188595313EB69262D /* CGMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6FAA7F591A1DDDCC8778C4703AB52 /* CGMappings.swift */; };
+		ADD189E2A2AE02531A7372477EE681B2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 208EADCE28544774D69C82CCA5B02F3D /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		AE583C1AC810C60F6DDDDAF13BC45A2A /* MBezierPath+Extension_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F1DDF013CA30D48E5E9A0E48DB699B /* MBezierPath+Extension_macOS.swift */; };
+		AF1B712BDC19B70E4D120BCEF7240C2F /* Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467F90D313272D1D8FB0EC4D6CB09122 /* Fill.swift */; };
+		B230A1C6BC29F3A4C724A26680BB4ECD /* MoveTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD3850E4F02F63B8A2445FE81881618 /* MoveTo.swift */; };
+		B35F3E40021C9FAA6A3378E233F5ECB6 /* FanMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A14F281B1CE2BBEE9A885E00D67B0693 /* FanMenu-dummy.m */; };
+		B4275F416B2CF9F4D9D8764255D9AF7F /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E9392E1FE47C4208B0DEA103306970BE /* MASConstraintMaker.m */; };
+		B502E43D1547D09FEB56D91A39F960D4 /* BATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B384305E97B6DF482BB58C402F6C6515 /* BATabBarController.m */; };
+		B992A737ADBC88649867375029147E4A /* BATabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4190104610673C5F5BF731A9AE3F89F2 /* BATabBar.m */; };
+		B9E31261A942EED25F56D3525D55AC42 /* FillInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3321B71A6CAE7D440BD05A6C97A40D20 /* FillInterpolation.swift */; };
+		BAF6ED1CB7BED6D5DB308DAEAB2CF32B /* FanMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A1338B9A59929C515D06F9F210CD52 /* FanMenu.swift */; };
+		BB74C104E3D4B3EE0EFAA970F61E266C /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6ADA7F51667F9A0F26794D0A34833C /* Pattern.swift */; };
+		BB90E4B8EE02493A65595E753C20205A /* Graphics_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ADB22845071B89AF7EFB2AC38194D7 /* Graphics_iOS.swift */; };
+		BD020E60709F7F70CC5224A86A57B0C4 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B15DD37CC1340A442F3E7A494EDB94F6 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD7EE4C4D53B2EAA7A507438963269D3 /* FanMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC8A4CF3BF14E03581564082EDDBBA7E /* FanMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD899311740359288FBCEEF4B0B1AE37 /* AnimationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BCACE6BA64DDEEB40D8D5D7A783BDF /* AnimationCache.swift */; };
+		BF706F7FC28312E77C98E443AC3AD673 /* Easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15429C140D66BDF504D6325E5309A690 /* Easing.swift */; };
+		BFE1D57AE3ED4DCB7CA22FB6B5158B37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D45DBADEF48A807641C6B5047D33D3 /* Foundation.framework */; };
+		C1AA546FCB8EF2B540480005C7CC3E54 /* MCAShapeLayerLineJoin_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B328371AE65B463B7FA7B1D86598929 /* MCAShapeLayerLineJoin_macOS.swift */; };
+		C1EC6FE3E242AA1FE2FF2C148231396E /* DescriptionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F6FF869CF38E29EC8A9AB3B62B2B0 /* DescriptionExtensions.swift */; };
+		C27C2B688329377F8E6F135AD4A91B65 /* SVGParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286FF4EBD830551DDCEA2FA10F46C073 /* SVGParser.swift */; };
+		C3FF187DE22720ECEFAA6474419939BC /* PathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2822729F770C3E799302B9CFE95D01FB /* PathBuilder.swift */; };
+		C5502BFA79CCCBB3D0B7517838906D0C /* MCAMediaTimingFillMode_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD7A6CB266609B5895402DAC15B27D7 /* MCAMediaTimingFillMode_macOS.swift */; };
+		C79896FA352872024BFC1B09BE955146 /* OffsetEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE2BF91AF53C1E16D30932E474A0A36 /* OffsetEffect.swift */; };
+		C80C2D7A8178585A07628C03FC13256A /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6B1F6FDD02B47ADB585AEC07E1F4E /* Variable.swift */; };
+		C9880C6918F4FAD6EC56F61DDADDB314 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 032F7DA8681D30A695D8522BD3893417 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAE42B6071D815C2CA3BBC28A1ABAB7E /* Macaw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56337A71CF058EA709EF0839C8B579D0 /* Macaw.framework */; };
+		CB9FD9DEEDAA33E46B6245A4A9A12489 /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E908AFB4BA165271849AC90E50802E4 /* Effect.swift */; };
+		CBBE2DA6E09E5585535B76FADCFB4865 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F0A39928AD5F2788DFBA008D6F3DEB /* Transform.swift */; };
+		CC97DD193577CC6E03B9C9E6128D5667 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D45DBADEF48A807641C6B5047D33D3 /* Foundation.framework */; };
+		CCB6DF335ED77D127A0CDF35F21F5B9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D45DBADEF48A807641C6B5047D33D3 /* Foundation.framework */; };
+		D059948A4BBE12E247AAC1EB5D2FC41D /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231079984E58731A67DE188EBD1F9775 /* Point.swift */; };
+		D1DFB0589064BF250A928B09A85A158B /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03134A145535FCB22F2D7ED74B8A2B34 /* Polyline.swift */; };
+		D24B20076CBA5D6E1601F77964BBD5E1 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 966662F9368E7CDB9FB0BF888FD22010 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D35CF1AD14A6DAE78EF96025EA357C21 /* RAMTransitionItemAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A104AD20E7ABC59632C40ED4C2B2D1 /* RAMTransitionItemAnimations.swift */; };
+		D4611455E35A2C5E424DA24DF10DEF8C /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E469B8DA458A64EB649DA25726BCDB5 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D48C49EB33CACCFDC65DEE47C3B5E6A8 /* AnimationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58534346C5C2DF22693B5964CA1BA337 /* AnimationUtils.swift */; };
+		D5ED124FB4B8E5488CCF4D589E23A5F2 /* MorphingGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6A3928D315AB3B895EF590653D352 /* MorphingGenerator.swift */; };
+		D62A38F0116D38B3C128B3636FB1C51E /* UIColor+ColorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = D564C4E81C4B37D72859044ED16505A7 /* UIColor+ColorWithHex.m */; };
+		D67F97FA83C6B2FDCE99C9181989F6C8 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0E4AF181B8CCA19FF2C8D1863726D1 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7286D7A3B500D5ACC7ED39CD9507891 /* MacawView+PDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402CE05694E140FA2358D81B99020166 /* MacawView+PDF.swift */; };
+		D97365AD3739DA5C400D5585CD375A4E /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BC5111EC80B6C017EA1602D1095FDFF /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D98113563186F277E8B6D24A972184D0 /* TouchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF02A8F83F08FD213884B8FB30DE0501 /* TouchEvent.swift */; };
+		DAE4017EE6070461387F9C4A3B18BE8A /* ColorMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5514EB3CB51617D8B0DE49B8835130 /* ColorMatrix.swift */; };
+		DBA9D0B617E60568ED0EF03C1A432CAE /* BATabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 762C2C559C456C8B69E7619EF7A08C2D /* BATabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD8701F9128E24EEC97DEC88804C104E /* TapEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B765CD16C2399E5761D87002FD2B47A3 /* TapEvent.swift */; };
+		E04B1E480D0A952E0D86F8558CA2E385 /* SVGCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CB19ABA9F53CD4507039645FBA00DA /* SVGCanvas.swift */; };
+		E058B6E742189EBBE1EC4E0CFF62A35A /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA5259741EFD590E2BD1FAFE290603A /* Polygon.swift */; };
+		E081E53812DF48C2E6E1819016349495 /* RAMFrameItemAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B4C45465B058129DBB07732D426073 /* RAMFrameItemAnimation.swift */; };
+		E241188B74464522A2DA4A002B05495E /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 04B927FB2FA6BE13801EC585FD0551B8 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E54731D9345843DCE0B688FA2F78FDF5 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA137687C719B98D116D3B94B0A1B31 /* View+MASAdditions.m */; };
+		E728C7DEEF302EB307B559E8E3DC6AA8 /* LocusInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD86EB17862AE0B83B7B48CE5E2786AB /* LocusInterpolation.swift */; };
+		E7433F2E1891AB0F2CA0F5CB7C8FA82D /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2ED6021C27C55ECD6D2E74C7E23565 /* Size.swift */; };
+		E7A4CDDD01BAE6C82A32949A3371880F /* BATabBarBadge.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CFB877E87D7263332C5E6DF737D6B2A /* BATabBarBadge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E866DC4BBE4EA50B1ED13790FCEBC5A2 /* AnimOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59F933AD847348737C19F17A8C83CD /* AnimOperators.swift */; };
+		E8821BA50B02A5A9507303BF81A871B1 /* RAMAnimatedTabBarController+BottomLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDC0CD93F0D229BDAB8A57EC1E1302B /* RAMAnimatedTabBarController+BottomLine.swift */; };
+		EA6EB9E177D8B8A9B0ED74A2BF36B3C8 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6ED50447EC8593BE6B6FD5E201953 /* Drawable.swift */; };
+		EB95B41ACAE4A012F4A14E1DF4C78219 /* SceneUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7DEA51BDE8FEED9AAB02C24D271E27 /* SceneUtils.swift */; };
+		EF01AD2BDB660259E6239BA198FB7434 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6202FCEF716E404386BAA63DD6EC89 /* Font.swift */; };
+		EF83D6BC1C59B3BAC7BCE7C9381B62C4 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD57E522D489AA1AFC881ACBC8DD97 /* Stop.swift */; };
+		EFF6DAD5E947CABC3B266F9D6CC421AF /* SVGParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C700EB78B1D9C499FAB640CC85FE56 /* SVGParserError.swift */; };
+		F188A8E15A925526B322CEAF4F64C819 /* RAMRotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F3F57C8A0AE3B55FDAE256BA19CDF /* RAMRotationAnimation.swift */; };
+		F3A0F40C192255C71C217ADBF3AE7529 /* PathFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5FD1CC46FF055BB1EFFACCFCFC9B04 /* PathFunctions.swift */; };
+		F5869DEC4359017CC27167EC371C4608 /* CGFloat+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC70DD99630F346C997EB8861C3A8C22 /* CGFloat+Double.swift */; };
+		F5FDA8598F9FFF56F3332912637567DE /* BATabBarBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = F6672A178CADB7AADCCE1BE546CC9355 /* BATabBarBadge.m */; };
+		F6A55782608C5DBBB995EF9C2FB2EC12 /* RAMAnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89307717E1D41390E80DFA697CF42B26 /* RAMAnimatedTabBarController.swift */; };
+		F95DDEB097C2C15AC8A1B8AE745C604D /* TransformInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73D1726BCA091314BD822217032735D /* TransformInterpolation.swift */; };
+		F99DCAF4A18E487FDC16666B4D4F0346 /* RAMAnimatedTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 173118998BFA1F56E417A34B9D1667A4 /* RAMAnimatedTabBarController-dummy.m */; };
+		FA3FD9F7DEE96E914D46F5FA9391231E /* TransformGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AD90EE2257C5D6A6CD3442EA92C122 /* TransformGenerator.swift */; };
+		FB30DDFA68FF252F07D3AB955CDAD8DC /* Arc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A48CA20367DA548663E7C6359CBCF0 /* Arc.swift */; };
+		FBB8137F210BBD3B9347E426760628EF /* BATabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBFD76C4D2FEAC6E96CD5BBEB804829 /* BATabBarController-dummy.m */; };
+		FCB1636B6077D045DE267F7BD351A675 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF3EF344CBE0BCCBB518089726895D /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE82FFD1748A68165ED12C07EDBEF2B4 /* Baseline.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E44F8B91A85EC59C0E8ED9AFE8BAE1 /* Baseline.swift */; };
+		FEC6EC9C05C606800B7D9D6D1C703FCB /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 632849ADE26DF0DB34549200EE4FFF48 /* MASCompositeConstraint.m */; };
+		FF2D4E27E274BC300A9DE5F519AE0038 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = C269CF00881B1C15B85923FA912F4A67 /* Node.swift */; };
+		FF445434DEF5AA44DECD838295C6EB7E /* NodeHashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D80B9D2C97B21A506C5F120B9124D7 /* NodeHashable.swift */; };
+		FFD2E027B6134A8D4FD6DDB984155088 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = BA64334AAEB6F229BCC5BD0FA0E74E7C /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D99601913778B9A766C778FB22FE7AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		333B2BCE0770807673C771E7F95AAE44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF0D1C4F76610CC8E797DDC63C507F3;
+			remoteInfo = FanMenu;
+		};
+		3E3F14633317633BD222290904427046 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37152A05E82F6B8FFFA45DAECD171A64;
+			remoteInfo = BATabBarController;
+		};
+		5D8B2E856B242FEF8A358B31D334FB85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63678F9A594800CBC7006B45EAB7886B;
+			remoteInfo = SWXMLHash;
+		};
+		6343421B7B1B412D544900FE6AE833F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CBE890FB81E7706B0A7C85EF7657002;
+			remoteInfo = Macaw;
+		};
+		927E09F3BC700FC63E596EFDC98F15E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DED4DEF356A163E50925101C3C7C0FB9;
+			remoteInfo = RAMAnimatedTabBarController;
+		};
+		BF395C5B12DEEA39C420D6235B0ED457 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		E3258BF03B3C7A62E4776B9554CF0FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63678F9A594800CBC7006B45EAB7886B;
+			remoteInfo = SWXMLHash;
+		};
+		E9DEC16AFACE4DD2C759AC58DE8A01A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CBE890FB81E7706B0A7C85EF7657002;
+			remoteInfo = Macaw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0004EC0FC3133FE31383D4A8DEF62F09 /* Locus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locus.swift; path = Source/model/geom2d/Locus.swift; sourceTree = "<group>"; };
+		018D998EFEC1B2BBE89D905EC13F87C7 /* SVGSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGSerializer.swift; path = Source/svg/SVGSerializer.swift; sourceTree = "<group>"; };
+		03134A145535FCB22F2D7ED74B8A2B34 /* Polyline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polyline.swift; path = Source/model/geom2d/Polyline.swift; sourceTree = "<group>"; };
+		032F7DA8681D30A695D8522BD3893417 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		039DDAC686B23DFB09891C027A7E8B72 /* AnimationImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationImpl.swift; path = Source/animation/AnimationImpl.swift; sourceTree = "<group>"; };
+		041B98A7F5DD0CE556ABCC7F9B1328CE /* RoundRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoundRect.swift; path = Source/model/geom2d/RoundRect.swift; sourceTree = "<group>"; };
+		044470C7DF90634015E0AA678F9A1781 /* Macaw-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Macaw-Info.plist"; sourceTree = "<group>"; };
+		04B927FB2FA6BE13801EC585FD0551B8 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		04FF3FD92ACB11D7667B89D0A21B8B87 /* RAMAnimatedTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMAnimatedTabBarController-prefix.pch"; sourceTree = "<group>"; };
+		06828CA57E9C10C9B5EAA3BFEF054CAE /* MView_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MView_iOS.swift; path = Source/platform/iOS/MView_iOS.swift; sourceTree = "<group>"; };
+		06F6A3928D315AB3B895EF590653D352 /* MorphingGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MorphingGenerator.swift; path = Source/animation/types/animation_generators/MorphingGenerator.swift; sourceTree = "<group>"; };
+		071F6FF869CF38E29EC8A9AB3B62B2B0 /* DescriptionExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DescriptionExtensions.swift; path = Source/utils/DescriptionExtensions.swift; sourceTree = "<group>"; };
+		07EB32C1648A535B788EC481E17EE825 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		08A3DFEFB170AA980212C9453610824C /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BF821DC966D82670CBC371CCF3791AE /* BATabBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BATabBarItem.h; path = BATabBarController/Classes/BATabBarItem.h; sourceTree = "<group>"; };
+		0CFB877E87D7263332C5E6DF737D6B2A /* BATabBarBadge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BATabBarBadge.h; path = BATabBarController/Classes/BATabBarBadge.h; sourceTree = "<group>"; };
+		0D8FCC7E0BBC6367D53CDB6C4444C69B /* Common_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common_macOS.swift; path = Source/platform/macOS/Common_macOS.swift; sourceTree = "<group>"; };
+		0E6ADA7F51667F9A0F26794D0A34833C /* Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = Source/model/draw/Pattern.swift; sourceTree = "<group>"; };
+		0EA675B9E25C7EC77655F4912D88E994 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/model/scene/Image.swift; sourceTree = "<group>"; };
+		0EC0A59C6D418594CFBC63DE45AFD879 /* UIImage2Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImage2Image.swift; path = Source/utils/UIImage2Image.swift; sourceTree = "<group>"; };
+		0FC1776198C6DC68DA91BB0F39C0C679 /* SVGConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGConstants.swift; path = Source/svg/SVGConstants.swift; sourceTree = "<group>"; };
+		123B4A453E6665961F00474E7101C731 /* GroupDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupDisposable.swift; path = Source/bindings/GroupDisposable.swift; sourceTree = "<group>"; };
+		135A6D2E5142DEF9104AF10B80FDDC99 /* GaussianBlur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaussianBlur.swift; path = Source/model/draw/GaussianBlur.swift; sourceTree = "<group>"; };
+		13EA797DF50440BE3940AB45DE69C390 /* OpacityAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpacityAnimation.swift; path = Source/animation/types/OpacityAnimation.swift; sourceTree = "<group>"; };
+		14D80B9D2C97B21A506C5F120B9124D7 /* NodeHashable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeHashable.swift; path = Source/animation/types/animation_generators/Cache/NodeHashable.swift; sourceTree = "<group>"; };
+		15429C140D66BDF504D6325E5309A690 /* Easing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Easing.swift; path = Source/animation/Easing.swift; sourceTree = "<group>"; };
+		169CD70FEC8BB4A6E2D9E06D7E59619C /* Group.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Source/model/scene/Group.swift; sourceTree = "<group>"; };
+		173118998BFA1F56E417A34B9D1667A4 /* RAMAnimatedTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RAMAnimatedTabBarController-dummy.m"; sourceTree = "<group>"; };
+		17497DEEB230616918F7B12EBD91AE72 /* ImageRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageRenderer.swift; path = Source/render/ImageRenderer.swift; sourceTree = "<group>"; };
+		17BE49E1501EB0EED84A373C970A6613 /* FanMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FanMenu-prefix.pch"; sourceTree = "<group>"; };
+		17D6A80B96127060E05B5FF830523EF3 /* RotateEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotateEvent.swift; path = Source/events/RotateEvent.swift; sourceTree = "<group>"; };
+		1B81971C5B407EE5199B4BF962A926BF /* NSTimer+Closure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimer+Closure.swift"; path = "Source/thirdparty/NSTimer+Closure.swift"; sourceTree = "<group>"; };
+		1BBFD76C4D2FEAC6E96CD5BBEB804829 /* BATabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BATabBarController-dummy.m"; sourceTree = "<group>"; };
+		1CA1CA307B8B8ACF78977FA24B1E381E /* SWXMLHash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWXMLHash-dummy.m"; sourceTree = "<group>"; };
+		1CFA99B0C02F8160D8014ED3CB20FA7E /* PathBounds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathBounds.swift; path = Source/animation/layer_animation/PathBounds.swift; sourceTree = "<group>"; };
+		1DE4F8CEA2B0E4936914F2376FC69221 /* TransformAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformAnimation.swift; path = Source/animation/types/TransformAnimation.swift; sourceTree = "<group>"; };
+		1E469B8DA458A64EB649DA25726BCDB5 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20115646D7C652FB84F0B026E3916FCB /* SVGNodeLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGNodeLayout.swift; path = Source/svg/SVGNodeLayout.swift; sourceTree = "<group>"; };
+		208EADCE28544774D69C82CCA5B02F3D /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		20AD024D253A06C91F1C19007C47E5C8 /* BATabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BATabBarController.h; path = BATabBarController/Classes/BATabBarController.h; sourceTree = "<group>"; };
+		231079984E58731A67DE188EBD1F9775 /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Source/model/geom2d/Point.swift; sourceTree = "<group>"; };
+		27228199C9F15329C3702C2BB65054DE /* AspectRatio.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AspectRatio.swift; path = Source/model/draw/AspectRatio.swift; sourceTree = "<group>"; };
+		2805D2CC34DE7A7E24ED2B1445C11740 /* BlendEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlendEffect.swift; path = Source/model/draw/BlendEffect.swift; sourceTree = "<group>"; };
+		2822729F770C3E799302B9CFE95D01FB /* PathBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathBuilder.swift; path = Source/model/geom2d/PathBuilder.swift; sourceTree = "<group>"; };
+		286FF4EBD830551DDCEA2FA10F46C073 /* SVGParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGParser.swift; path = Source/svg/SVGParser.swift; sourceTree = "<group>"; };
+		299215E5C7CE2F8D5E690476B533B1A3 /* MCAShapeLayerLineCap_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAShapeLayerLineCap_iOS.swift; path = Source/MCAShapeLayerLineCap_iOS.swift; sourceTree = "<group>"; };
+		2B7247E0774526FF307897CD2B9A9D01 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		2C6BF0187E65474AECC723D01992EBFA /* Pods-ManufactureApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ManufactureApp.release.xcconfig"; sourceTree = "<group>"; };
+		2DAFA5AB438A23D641A01ACFAD08CBC2 /* TransformedLocus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformedLocus.swift; path = Source/model/geom2d/TransformedLocus.swift; sourceTree = "<group>"; };
+		2DFC3B549079171083E2D0ADD52B56E7 /* MCAMediaTimingFillMode_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAMediaTimingFillMode_iOS.swift; path = Source/MCAMediaTimingFillMode_iOS.swift; sourceTree = "<group>"; };
+		30EA0292C0594A1E84DB8018C7F9F69E /* StrokeInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StrokeInterpolation.swift; path = Source/animation/layer_animation/Extensions/StrokeInterpolation.swift; sourceTree = "<group>"; };
+		31CB19ABA9F53CD4507039645FBA00DA /* SVGCanvas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGCanvas.swift; path = Source/svg/SVGCanvas.swift; sourceTree = "<group>"; };
+		3321B71A6CAE7D440BD05A6C97A40D20 /* FillInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FillInterpolation.swift; path = Source/animation/layer_animation/Extensions/FillInterpolation.swift; sourceTree = "<group>"; };
+		33A1338B9A59929C515D06F9F210CD52 /* FanMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FanMenu.swift; path = Sources/FanMenu.swift; sourceTree = "<group>"; };
+		3445D32A586F9C263667FFB05554C2FF /* RAMAnimatedTabBarController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RAMAnimatedTabBarController-Info.plist"; sourceTree = "<group>"; };
+		352E8FA4AB08935F720B1CE413F33313 /* TransformHashable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformHashable.swift; path = Source/animation/types/animation_generators/Cache/TransformHashable.swift; sourceTree = "<group>"; };
+		3590583E83E90F55CE331C455DA562DB /* FanMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FanMenu.modulemap; sourceTree = "<group>"; };
+		363B17A52AFCF3707377437B8B91CD11 /* BATabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BATabBarController.xcconfig; sourceTree = "<group>"; };
+		36B746F5CD9C8FFEC1FAC26EC2927DE5 /* Macaw-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Macaw-dummy.m"; sourceTree = "<group>"; };
+		3743802298E401B3B42A34BCB5C6ADF2 /* RAMBounceAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMBounceAnimation.swift; path = RAMAnimatedTabBarController/Animations/BounceAnimation/RAMBounceAnimation.swift; sourceTree = "<group>"; };
+		389136D67C8CE2920A977D9922866725 /* CSSParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSSParser.swift; path = Source/svg/CSSParser.swift; sourceTree = "<group>"; };
+		3936478628FC65BBB91296639A3817E2 /* DoubleInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoubleInterpolation.swift; path = Source/animation/layer_animation/Extensions/DoubleInterpolation.swift; sourceTree = "<group>"; };
+		3A0F48108500DD982C794D32AFF597C4 /* SWXMLHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWXMLHash.swift; path = Source/SWXMLHash.swift; sourceTree = "<group>"; };
+		3BA1743FF207C935163853891B11805C /* Pods_ManufactureApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ManufactureApp.framework; path = "Pods-ManufactureApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6202FCEF716E404386BAA63DD6EC89 /* Font.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Font.swift; path = Source/model/draw/Font.swift; sourceTree = "<group>"; };
+		3E9C0F0B1134960AA98016365A869E55 /* Pods-ManufactureApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ManufactureApp-dummy.m"; sourceTree = "<group>"; };
+		3F840B31C6C1E4354E57C90332BA17A2 /* BoundsUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BoundsUtils.swift; path = Source/utils/BoundsUtils.swift; sourceTree = "<group>"; };
+		402CE05694E140FA2358D81B99020166 /* MacawView+PDF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MacawView+PDF.swift"; path = "Source/export/MacawView+PDF.swift"; sourceTree = "<group>"; };
+		4190104610673C5F5BF731A9AE3F89F2 /* BATabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BATabBar.m; path = BATabBarController/Classes/BATabBar.m; sourceTree = "<group>"; };
+		41F147F062E86F461A30C37595911B04 /* SWXMLHash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.xcconfig; sourceTree = "<group>"; };
+		467F90D313272D1D8FB0EC4D6CB09122 /* Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fill.swift; path = Source/model/draw/Fill.swift; sourceTree = "<group>"; };
+		49A328E4E3BF98DF2EAB8B2803D92894 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
+		4A15593F4907A9545E128BCC99B4A361 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = Source/animation/Animation.swift; sourceTree = "<group>"; };
+		4AA137687C719B98D116D3B94B0A1B31 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		4C28E20C0F5825CD1D46CAE0F5B650F4 /* Ellipse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ellipse.swift; path = Source/model/geom2d/Ellipse.swift; sourceTree = "<group>"; };
+		4CF079CBFC1163293B906F7D535712E7 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		4E5FB3CEAD6FF50FD474B2612B9C4510 /* Pods-ManufactureApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ManufactureApp-Info.plist"; sourceTree = "<group>"; };
+		4E908AFB4BA165271849AC90E50802E4 /* Effect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Effect.swift; path = Source/model/draw/Effect.swift; sourceTree = "<group>"; };
+		504C92ED208EAB56E44A2A7BFF93F1E8 /* LinearGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinearGradient.swift; path = Source/model/draw/LinearGradient.swift; sourceTree = "<group>"; };
+		5076F2C1F3E091F94F1DA6BF504F9DD3 /* AnimationProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationProducer.swift; path = Source/animation/AnimationProducer.swift; sourceTree = "<group>"; };
+		5199CA577FEC6E2E15323823A451D699 /* RenderContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderContext.swift; path = Source/render/RenderContext.swift; sourceTree = "<group>"; };
+		51ABFA9373D30D3423ADEEBA57FDA3AF /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52989657C770DA00B147116E4966144B /* Gradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gradient.swift; path = Source/model/draw/Gradient.swift; sourceTree = "<group>"; };
+		5338EF3234F3EE667625F8A7372BE888 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
+		53AD680CF6AF612A4AF14DD23609BA99 /* MDisplayLink_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MDisplayLink_iOS.swift; path = Source/platform/iOS/MDisplayLink_iOS.swift; sourceTree = "<group>"; };
+		56337A71CF058EA709EF0839C8B579D0 /* Macaw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Macaw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CF3EF344CBE0BCCBB518089726895D /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		58534346C5C2DF22693B5964CA1BA337 /* AnimationUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationUtils.swift; path = Source/animation/AnimationUtils.swift; sourceTree = "<group>"; };
+		58A686A7F37D963CDA42047D3C2B4826 /* Pods-ManufactureApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ManufactureApp.modulemap"; sourceTree = "<group>"; };
+		58F6FAA7F591A1DDDCC8778C4703AB52 /* CGMappings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGMappings.swift; path = Source/utils/CGMappings.swift; sourceTree = "<group>"; };
+		593D55E5E78D6E039830B966EFFE5109 /* Circle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Circle.swift; path = Source/model/geom2d/Circle.swift; sourceTree = "<group>"; };
+		59D461ACAA3098F919459CA3C44ABD38 /* PathSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathSegment.swift; path = Source/model/geom2d/PathSegment.swift; sourceTree = "<group>"; };
+		59F2957AC486371332C00F142A297260 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		59FBF8A72189D0B485ED7F3F280C82F2 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		5BC5111EC80B6C017EA1602D1095FDFF /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		5C5EC32150D17700D5E3DF1013D2D223 /* RAMAnimatedTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RAMAnimatedTabBarController.xcconfig; sourceTree = "<group>"; };
+		5EDE2B55904A67B42B04FEF0F82A9C57 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		5F0E4AF181B8CCA19FF2C8D1863726D1 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		608BD1CF1926390AF431282E26E48999 /* BATabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BATabBarController.framework; path = BATabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60AD2A70447A22F0CB52B6C1D2D0DBAC /* MView_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MView_macOS.swift; path = Source/platform/macOS/MView_macOS.swift; sourceTree = "<group>"; };
+		632849ADE26DF0DB34549200EE4FFF48 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		636AFE37C72646313F11D34CD6677683 /* Rect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rect.swift; path = Source/model/geom2d/Rect.swift; sourceTree = "<group>"; };
+		639B0CAAC754055AE9C678267683A7C7 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		64204A8E0112E8B99AEEF17B7425B6B0 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		64F2FE6B7D33F4367F043145F3B6DE2E /* ColorMatrixEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorMatrixEffect.swift; path = Source/model/draw/ColorMatrixEffect.swift; sourceTree = "<group>"; };
+		67FAD99E79992344C23BE9ADA83555F9 /* GeomUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeomUtils.swift; path = Source/model/geom2d/GeomUtils.swift; sourceTree = "<group>"; };
+		6803A26D713572B4FCF211333F946956 /* RAMAnimatedTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RAMAnimatedTabBarController.framework; path = RAMAnimatedTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A636D17C9FFC571A7FC17F7DBB6B53 /* AnimatableVariable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatableVariable.swift; path = Source/animation/AnimatableVariable.swift; sourceTree = "<group>"; };
+		68AD90EE2257C5D6A6CD3442EA92C122 /* TransformGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformGenerator.swift; path = Source/animation/types/animation_generators/TransformGenerator.swift; sourceTree = "<group>"; };
+		6A9209782EB38D82C8C66465417EEE9B /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Source/model/draw/Align.swift; sourceTree = "<group>"; };
+		6B70061A8ACBD4F7F95DBC029F86565A /* ShapeLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeLayer.swift; path = Source/views/ShapeLayer.swift; sourceTree = "<group>"; };
+		6C5FD1CC46FF055BB1EFFACCFCFC9B04 /* PathFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathFunctions.swift; path = Source/animation/layer_animation/PathFunctions.swift; sourceTree = "<group>"; };
+		6E3BDB2B0532774236948ED87DC4A87C /* ShapeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeRenderer.swift; path = Source/render/ShapeRenderer.swift; sourceTree = "<group>"; };
+		6F063FC753659D5E77166799606ABA31 /* SWXMLHash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-umbrella.h"; sourceTree = "<group>"; };
+		6F43CA01D6D27783D2B6954F77221043 /* MDisplayLink_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MDisplayLink_macOS.swift; path = Source/platform/macOS/MDisplayLink_macOS.swift; sourceTree = "<group>"; };
+		7041C9BF92ED1685C6E27BB61115B32B /* NodeRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeRenderer.swift; path = Source/render/NodeRenderer.swift; sourceTree = "<group>"; };
+		720E19D9360043259F6A62EDA1F122B9 /* shim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = shim.swift; path = Source/shim.swift; sourceTree = "<group>"; };
+		72823AB2E754BF6C14EA7FB21EC443A7 /* RAMItemAnimationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMItemAnimationProtocol.swift; path = RAMAnimatedTabBarController/RAMItemAnimationProtocol.swift; sourceTree = "<group>"; };
+		72CDC63FE90C818111E3426AC0262BD3 /* Macaw.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Macaw.modulemap; sourceTree = "<group>"; };
+		72F1DDF013CA30D48E5E9A0E48DB699B /* MBezierPath+Extension_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MBezierPath+Extension_macOS.swift"; path = "Source/platform/macOS/MBezierPath+Extension_macOS.swift"; sourceTree = "<group>"; };
+		73664E07DEEAD794EBD13132DCD98C57 /* BATabBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BATabBarItem.m; path = BATabBarController/Classes/BATabBarItem.m; sourceTree = "<group>"; };
+		737C0D77B8B3CF00662C99A75D111AF3 /* TimingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimingFunction.swift; path = Source/animation/types/animation_generators/TimingFunction.swift; sourceTree = "<group>"; };
+		7468338EB7A4DC95F1FEA5520EBABF89 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = Source/model/draw/Color.swift; sourceTree = "<group>"; };
+		74A48CA20367DA548663E7C6359CBCF0 /* Arc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Arc.swift; path = Source/model/geom2d/Arc.swift; sourceTree = "<group>"; };
+		74C3BCCAD6C75ECFD0EE0CB08928DBB4 /* RAMAnimatedTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RAMAnimatedTabBarController.modulemap; sourceTree = "<group>"; };
+		7561BE076BF883F405B75F57B3D76107 /* OpacityGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpacityGenerator.swift; path = Source/animation/types/animation_generators/OpacityGenerator.swift; sourceTree = "<group>"; };
+		76279697263223F3B4F1D642DF571A88 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		762C2C559C456C8B69E7619EF7A08C2D /* BATabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BATabBarController-umbrella.h"; sourceTree = "<group>"; };
+		78ED24E3F3BF8883C0859981DCF05F5D /* Stroke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stroke.swift; path = Source/model/draw/Stroke.swift; sourceTree = "<group>"; };
+		7B328371AE65B463B7FA7B1D86598929 /* MCAShapeLayerLineJoin_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAShapeLayerLineJoin_macOS.swift; path = Source/MCAShapeLayerLineJoin_macOS.swift; sourceTree = "<group>"; };
+		7B5514EB3CB51617D8B0DE49B8835130 /* ColorMatrix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorMatrix.swift; path = Source/model/draw/ColorMatrix.swift; sourceTree = "<group>"; };
+		7BA99999757241D033B22877F5CE7723 /* LineJoin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineJoin.swift; path = Source/model/draw/LineJoin.swift; sourceTree = "<group>"; };
+		7C2BDB6017424D13E164E0DCB092E565 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		7CCE2620A7204538F708331400D5F5C9 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		7DDC0CD93F0D229BDAB8A57EC1E1302B /* RAMAnimatedTabBarController+BottomLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RAMAnimatedTabBarController+BottomLine.swift"; path = "RAMAnimatedTabBarController/BottomLine/RAMAnimatedTabBarController+BottomLine.swift"; sourceTree = "<group>"; };
+		7E25D925B7299C5F1BCF9554D2BEA440 /* MorphingAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MorphingAnimation.swift; path = Source/animation/types/MorphingAnimation.swift; sourceTree = "<group>"; };
+		81D9FE2C20265F1CC6DEC59BA1E3B975 /* Text.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Text.swift; path = Source/model/scene/Text.swift; sourceTree = "<group>"; };
+		83A63E8B3E17275024C3A188576F7B45 /* SVGParserRegexHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGParserRegexHelper.swift; path = Source/svg/SVGParserRegexHelper.swift; sourceTree = "<group>"; };
+		85B9580F4609C332AC101E66DB571606 /* Macaw.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Macaw.xcconfig; sourceTree = "<group>"; };
+		85BFB89A2168DBECD403071148E29BD8 /* SWXMLHash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-prefix.pch"; sourceTree = "<group>"; };
+		86AD6ED044E0F8C11F7EAEF43433849A /* ShapeAnimationGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeAnimationGenerator.swift; path = Source/animation/types/animation_generators/ShapeAnimationGenerator.swift; sourceTree = "<group>"; };
+		86F0A39928AD5F2788DFBA008D6F3DEB /* Transform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transform.swift; path = Source/model/geom2d/Transform.swift; sourceTree = "<group>"; };
+		89307717E1D41390E80DFA697CF42B26 /* RAMAnimatedTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMAnimatedTabBarController.swift; path = RAMAnimatedTabBarController/RAMAnimatedTabBarController.swift; sourceTree = "<group>"; };
+		8D05CD24EC1EC846AB3BBC8F477707AE /* FanMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FanMenu.framework; path = FanMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E90FE67F9E1B645875B90CB4D1F6E87 /* SVGView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGView.swift; path = Source/svg/SVGView.swift; sourceTree = "<group>"; };
+		8E9BA7003ADC64D98742A3D0E4DBEBAB /* Macaw-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Macaw-prefix.pch"; sourceTree = "<group>"; };
+		966662F9368E7CDB9FB0BF888FD22010 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		97CD52287888354C14568E4A4EDE305B /* XMLIndexer+XMLIndexerDeserializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XMLIndexer+XMLIndexerDeserializable.swift"; path = "Source/XMLIndexer+XMLIndexerDeserializable.swift"; sourceTree = "<group>"; };
+		97D014AD6344E543FEDB1FD1F8F2BFEC /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SWXMLHash.framework; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98A3B828DB044CBD40D995A4EE0010BB /* Insets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Insets.swift; path = Source/model/geom2d/Insets.swift; sourceTree = "<group>"; };
+		99A104AD20E7ABC59632C40ED4C2B2D1 /* RAMTransitionItemAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMTransitionItemAnimations.swift; path = RAMAnimatedTabBarController/Animations/TransitionAniamtions/RAMTransitionItemAnimations.swift; sourceTree = "<group>"; };
+		9AA6B1F6FDD02B47ADB585AEC07E1F4E /* Variable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Variable.swift; path = Source/bindings/Variable.swift; sourceTree = "<group>"; };
+		9C7B708FE9A12669F7C094BD84A26C02 /* FanMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FanMenu.h; path = Sources/FanMenu.h; sourceTree = "<group>"; };
+		9C7DEA51BDE8FEED9AAB02C24D271E27 /* SceneUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneUtils.swift; path = Source/model/scene/SceneUtils.swift; sourceTree = "<group>"; };
+		9D3C8DC3882BDF528677E3E56861B007 /* PinchEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinchEvent.swift; path = Source/events/PinchEvent.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EDCD4200179B2B45BFF7EDC19DE48F0 /* ShapeInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeInterpolation.swift; path = Source/animation/layer_animation/Extensions/ShapeInterpolation.swift; sourceTree = "<group>"; };
+		9FF91D8AAC5943158A0A5A985EBE34F2 /* Common_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common_iOS.swift; path = Source/platform/iOS/Common_iOS.swift; sourceTree = "<group>"; };
+		A0000F2140A1234DBA06E0EF6A66B200 /* TextRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextRenderer.swift; path = Source/render/TextRenderer.swift; sourceTree = "<group>"; };
+		A0C302778EC77A884BAD65A05D4851D0 /* MCAMediaTimingFunctionName_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAMediaTimingFunctionName_macOS.swift; path = Source/MCAMediaTimingFunctionName_macOS.swift; sourceTree = "<group>"; };
+		A0C700EB78B1D9C499FAB640CC85FE56 /* SVGParserError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SVGParserError.swift; path = Source/svg/SVGParserError.swift; sourceTree = "<group>"; };
+		A1288E767A8C1F61818BF3965F58421A /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		A14F281B1CE2BBEE9A885E00D67B0693 /* FanMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FanMenu-dummy.m"; sourceTree = "<group>"; };
+		A2A769F2A8222BFFE5EF33E17B162DB1 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
+		A37B9AD76A5FCB11855866B51CB82508 /* RAMFumeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMFumeAnimation.swift; path = RAMAnimatedTabBarController/Animations/FumeAnimation/RAMFumeAnimation.swift; sourceTree = "<group>"; };
+		A3C087C3E0B3CFB192EDA91DB277D00B /* Touchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Touchable.swift; path = Source/views/Touchable.swift; sourceTree = "<group>"; };
+		A5D6ECCBB31FD1A5FEB07B61493057DB /* ContentsAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentsAnimation.swift; path = Source/animation/types/ContentsAnimation.swift; sourceTree = "<group>"; };
+		A72AF4970E5F48F1ED09A5CB4F764853 /* Line.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Line.swift; path = Source/model/geom2d/Line.swift; sourceTree = "<group>"; };
+		A7F4380F444C55915755CA85ECD6D703 /* Path.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Path.swift; path = Source/model/geom2d/Path.swift; sourceTree = "<group>"; };
+		A858DA53EA07FE08E6783C40F47B506F /* Interpolable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpolable.swift; path = Source/animation/layer_animation/Extensions/Interpolable.swift; sourceTree = "<group>"; };
+		A910331FF03A5B2590E7E69550B6AF1F /* MacawView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MacawView.swift; path = Source/views/MacawView.swift; sourceTree = "<group>"; };
+		A9A0EF4658525DC8403D70EF4AD6C059 /* BATabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BATabBarController.modulemap; sourceTree = "<group>"; };
+		AA1F065AFF38CCB73E76EC6D95A5ED39 /* ShapeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeAnimation.swift; path = Source/animation/types/ShapeAnimation.swift; sourceTree = "<group>"; };
+		AA24CEFBD2044EE6572BAC58CBFAA83B /* AnimationSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationSequence.swift; path = Source/animation/types/AnimationSequence.swift; sourceTree = "<group>"; };
+		AAF17607C93CCD4BF8390D7CDBAA5BFA /* Pods-ManufactureApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ManufactureApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AAF29602A60769D78000335590726AB2 /* FuncBounds.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FuncBounds.swift; path = Source/animation/layer_animation/FuncBounds.swift; sourceTree = "<group>"; };
+		B15DD37CC1340A442F3E7A494EDB94F6 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		B1B4C45465B058129DBB07732D426073 /* RAMFrameItemAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMFrameItemAnimation.swift; path = RAMAnimatedTabBarController/Animations/FrameAnimation/RAMFrameItemAnimation.swift; sourceTree = "<group>"; };
+		B2475C8DA34F4E4C9FE945C559A83F74 /* CombineAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombineAnimation.swift; path = Source/animation/types/CombineAnimation.swift; sourceTree = "<group>"; };
+		B384305E97B6DF482BB58C402F6C6515 /* BATabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BATabBarController.m; path = BATabBarController/Classes/BATabBarController.m; sourceTree = "<group>"; };
+		B4BD57E522D489AA1AFC881ACBC8DD97 /* Stop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stop.swift; path = Source/model/draw/Stop.swift; sourceTree = "<group>"; };
+		B71DEAA782A3FDFF201A2C6505D2ECC4 /* Pods-ManufactureApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ManufactureApp-umbrella.h"; sourceTree = "<group>"; };
+		B765CD16C2399E5761D87002FD2B47A3 /* TapEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TapEvent.swift; path = Source/events/TapEvent.swift; sourceTree = "<group>"; };
+		B7C238E98E45D5499F53FC5B665DBFDF /* MCAShapeLayerLineCap_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAShapeLayerLineCap_macOS.swift; path = Source/MCAShapeLayerLineCap_macOS.swift; sourceTree = "<group>"; };
+		BA64334AAEB6F229BCC5BD0FA0E74E7C /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		BAF371864BACE82970DD3552653F1B1C /* UIColor+ColorWithHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ColorWithHex.h"; path = "BATabBarController/Classes/UIColor+ColorWithHex.h"; sourceTree = "<group>"; };
+		BB35661C03D82F07651C71F131EA244D /* LineCap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LineCap.swift; path = Source/model/draw/LineCap.swift; sourceTree = "<group>"; };
+		BB9424EADCD05463EF2AD687A060120A /* RAMAnimatedTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RAMAnimatedTabBarController-umbrella.h"; sourceTree = "<group>"; };
+		BC5D24FBDC953D61E42169E32768C127 /* BATabBarController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BATabBarController-Info.plist"; sourceTree = "<group>"; };
+		BE804D4506E058135E610324D11858C6 /* CAAnimationClosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CAAnimationClosure.swift; path = Source/thirdparty/CAAnimationClosure.swift; sourceTree = "<group>"; };
+		BE835702D77C7620511FFA1E4591F0ED /* Pods-ManufactureApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ManufactureApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF45A7378DAA8767F7817658D9BA0E39 /* Macaw-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Macaw-umbrella.h"; sourceTree = "<group>"; };
+		C269CF00881B1C15B85923FA912F4A67 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Source/model/scene/Node.swift; sourceTree = "<group>"; };
+		C387806CE1F7FC814E9EE915DD03EEF9 /* Macaw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Macaw.framework; path = Macaw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C436464A5E50C1D43F948C85451D12D4 /* Shape.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shape.swift; path = Source/model/scene/Shape.swift; sourceTree = "<group>"; };
+		C77F3F57C8A0AE3B55FDAE256BA19CDF /* RAMRotationAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMRotationAnimation.swift; path = RAMAnimatedTabBarController/Animations/RotationAnimation/RAMRotationAnimation.swift; sourceTree = "<group>"; };
+		C9BCACE6BA64DDEEB40D8D5D7A783BDF /* AnimationCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationCache.swift; path = Source/animation/types/animation_generators/Cache/AnimationCache.swift; sourceTree = "<group>"; };
+		C9CF97869F8A99BFDB07AAA0C32C4733 /* Graphics_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Graphics_macOS.swift; path = Source/platform/macOS/Graphics_macOS.swift; sourceTree = "<group>"; };
+		C9E66FF0C58D547B2A69DB56964C526C /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		CD86EB17862AE0B83B7B48CE5E2786AB /* LocusInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocusInterpolation.swift; path = Source/animation/layer_animation/Extensions/LocusInterpolation.swift; sourceTree = "<group>"; };
+		CDD3850E4F02F63B8A2445FE81881618 /* MoveTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MoveTo.swift; path = Source/model/geom2d/MoveTo.swift; sourceTree = "<group>"; };
+		CDF2A9533415AD0601DC0A6674BDC2DB /* SWXMLHash-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SWXMLHash-Info.plist"; sourceTree = "<group>"; };
+		D05DE7A4BE721A1BBAB0327BDE4303B4 /* MCAMediaTimingFunctionName_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAMediaTimingFunctionName_iOS.swift; path = Source/MCAMediaTimingFunctionName_iOS.swift; sourceTree = "<group>"; };
+		D3E44F8B91A85EC59C0E8ED9AFE8BAE1 /* Baseline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Baseline.swift; path = Source/model/draw/Baseline.swift; sourceTree = "<group>"; };
+		D4EB471E7B4392C23BB2A56B2D091661 /* Event.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Source/events/Event.swift; sourceTree = "<group>"; };
+		D564C4E81C4B37D72859044ED16505A7 /* UIColor+ColorWithHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ColorWithHex.m"; path = "BATabBarController/Classes/UIColor+ColorWithHex.m"; sourceTree = "<group>"; };
+		D59C23560B0F2E69C6F13DBB70C49EBB /* Pods-ManufactureApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ManufactureApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D5A235609A9958BD1B9FBCF8C70D672C /* RenderUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RenderUtils.swift; path = Source/render/RenderUtils.swift; sourceTree = "<group>"; };
+		D6C31DB89060840BF598E81CE2F4994D /* AlphaEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlphaEffect.swift; path = Source/model/draw/AlphaEffect.swift; sourceTree = "<group>"; };
+		D72994687692BE3180379282738A9D5A /* PathSegmentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathSegmentType.swift; path = Source/model/geom2d/PathSegmentType.swift; sourceTree = "<group>"; };
+		D7E3400003ADB98DFCF6CDE7B55451A2 /* GroupRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupRenderer.swift; path = Source/render/GroupRenderer.swift; sourceTree = "<group>"; };
+		D8F031CD9C30248170BDE34537BC4A61 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		DC146899A05D6A8BEFFC7AA8B624FA8B /* RAMBadge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAMBadge.swift; path = RAMAnimatedTabBarController/RAMBadge/RAMBadge.swift; sourceTree = "<group>"; };
+		DEEB1F5F6AE3000DF54BC2FF84272F99 /* MDisplayLink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MDisplayLink.swift; path = Source/platform/MDisplayLink.swift; sourceTree = "<group>"; };
+		E1D45DBADEF48A807641C6B5047D33D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E4ADB22845071B89AF7EFB2AC38194D7 /* Graphics_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Graphics_iOS.swift; path = Source/platform/iOS/Graphics_iOS.swift; sourceTree = "<group>"; };
+		E5B3638077B98CA57E017BA877A51B18 /* MCAShapeLayerLineJoin_iOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAShapeLayerLineJoin_iOS.swift; path = Source/MCAShapeLayerLineJoin_iOS.swift; sourceTree = "<group>"; };
+		E6AA4EF04618132B4B049CFCB84BE93C /* BATabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BATabBar.h; path = BATabBarController/Classes/BATabBar.h; sourceTree = "<group>"; };
+		E73D1726BCA091314BD822217032735D /* TransformInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformInterpolation.swift; path = Source/animation/layer_animation/Extensions/TransformInterpolation.swift; sourceTree = "<group>"; };
+		E9392E1FE47C4208B0DEA103306970BE /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		EB48375A91D372E2BEEEA3B491C38E4B /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		ECE0EB88A43732F0C451F91D7E8AD8D3 /* FanMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FanMenu.xcconfig; sourceTree = "<group>"; };
+		ED0E0D875350803E7353E1E2F5906F9F /* FanMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FanMenu-Info.plist"; sourceTree = "<group>"; };
+		EDD7A6CB266609B5895402DAC15B27D7 /* MCAMediaTimingFillMode_macOS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MCAMediaTimingFillMode_macOS.swift; path = Source/MCAMediaTimingFillMode_macOS.swift; sourceTree = "<group>"; };
+		EE59F933AD847348737C19F17A8C83CD /* AnimOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimOperators.swift; path = Source/animation/layer_animation/Extensions/AnimOperators.swift; sourceTree = "<group>"; };
+		EF02A8F83F08FD213884B8FB30DE0501 /* TouchEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchEvent.swift; path = Source/events/TouchEvent.swift; sourceTree = "<group>"; };
+		EFA5259741EFD590E2BD1FAFE290603A /* Polygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polygon.swift; path = Source/model/geom2d/Polygon.swift; sourceTree = "<group>"; };
+		F0F6ED50447EC8593BE6B6FD5E201953 /* Drawable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Drawable.swift; path = Source/model/draw/Drawable.swift; sourceTree = "<group>"; };
+		F25B3387ACE1375B39E248AEA2CA089F /* PanEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PanEvent.swift; path = Source/events/PanEvent.swift; sourceTree = "<group>"; };
+		F2EA02C79A6321789F6DEF2F8B51B090 /* CombinationAnimationGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombinationAnimationGenerator.swift; path = Source/animation/types/animation_generators/CombinationAnimationGenerator.swift; sourceTree = "<group>"; };
+		F476E0E29DD7E53AACA83D079AC7B745 /* ContentsInterpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentsInterpolation.swift; path = Source/animation/layer_animation/Extensions/ContentsInterpolation.swift; sourceTree = "<group>"; };
+		F4FA26D8C5BDD279B09406792EEBDEF7 /* RadialGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadialGradient.swift; path = Source/model/draw/RadialGradient.swift; sourceTree = "<group>"; };
+		F6672A178CADB7AADCCE1BE546CC9355 /* BATabBarBadge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BATabBarBadge.m; path = BATabBarController/Classes/BATabBarBadge.m; sourceTree = "<group>"; };
+		F7EB24586AFE339598C7735731D5E877 /* Disposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disposable.swift; path = Source/bindings/Disposable.swift; sourceTree = "<group>"; };
+		F84A7F6185DA7342E38FDE4A11080EE3 /* BATabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BATabBarController-prefix.pch"; sourceTree = "<group>"; };
+		F9444D04370477C86AE42E4D6F1A1D78 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		FB0EAF3D9EA47F7B9ACF737CE93BCD2E /* ContentLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentLayout.swift; path = Source/layout/ContentLayout.swift; sourceTree = "<group>"; };
+		FB2753CF91301E08E90FD1A86710057E /* Pods-ManufactureApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ManufactureApp-frameworks.sh"; sourceTree = "<group>"; };
+		FB2ED6021C27C55ECD6D2E74C7E23565 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Source/model/geom2d/Size.swift; sourceTree = "<group>"; };
+		FBE2BF91AF53C1E16D30932E474A0A36 /* OffsetEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OffsetEffect.swift; path = Source/model/draw/OffsetEffect.swift; sourceTree = "<group>"; };
+		FC70DD99630F346C997EB8861C3A8C22 /* CGFloat+Double.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGFloat+Double.swift"; path = "Source/thirdparty/CGFloat+Double.swift"; sourceTree = "<group>"; };
+		FC8A4CF3BF14E03581564082EDDBBA7E /* FanMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FanMenu-umbrella.h"; sourceTree = "<group>"; };
+		FE85990160A86194FA5456AA11DC7601 /* SWXMLHash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SWXMLHash.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FA089FB86DAEF1DAAA9AB67A2785B41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC97DD193577CC6E03B9C9E6128D5667 /* Foundation.framework in Frameworks */,
+				1B22A0634F53BB054CB4BEF079757D67 /* SWXMLHash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BA1BAAFB81121FE38FA80E039BE7E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8013F896FC2ADA356ADD7C029DFD75A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EFB54ED08BE24592F5570D0DC1F4FCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFE1D57AE3ED4DCB7CA22FB6B5158B37 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAB26C34887C708EAB19CC2940DC596C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12176484E4E674068518AC957D48C95B /* Foundation.framework in Frameworks */,
+				7D3EAE454BB00370786C8BFCFBF30883 /* Masonry.framework in Frameworks */,
+				994EDC3A6CC2180F5CB110489230D8E7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0CAE8FC4939825672D26F2052071074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D55632BD7778932124A08DE6A603C12 /* Foundation.framework in Frameworks */,
+				4E262696A710809AA32AE28F2C409CD6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E49E1BC37CF305224E9204D337981275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12DF161C87B82952BE9AD390BCDF5CD8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B52F94BB0E44B02B27E37E4F3F2874 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB6DF335ED77D127A0CDF35F21F5B9C /* Foundation.framework in Frameworks */,
+				CAE42B6071D815C2CA3BBC28A1ABAB7E /* Macaw.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0437AB9661161DE7EDDAB0C5A186F65A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE85990160A86194FA5456AA11DC7601 /* SWXMLHash.modulemap */,
+				41F147F062E86F461A30C37595911B04 /* SWXMLHash.xcconfig */,
+				1CA1CA307B8B8ACF78977FA24B1E381E /* SWXMLHash-dummy.m */,
+				CDF2A9533415AD0601DC0A6674BDC2DB /* SWXMLHash-Info.plist */,
+				85BFB89A2168DBECD403071148E29BD8 /* SWXMLHash-prefix.pch */,
+				6F063FC753659D5E77166799606ABA31 /* SWXMLHash-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SWXMLHash";
+			sourceTree = "<group>";
+		};
+		0AF7BCB47077BA77934CA57561A8A343 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDC230651F1F77F122C2BAFD25A48239 /* Pods-ManufactureApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		12DECA2DB26E9723A4EDA49286CEF11B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72CDC63FE90C818111E3426AC0262BD3 /* Macaw.modulemap */,
+				85B9580F4609C332AC101E66DB571606 /* Macaw.xcconfig */,
+				36B746F5CD9C8FFEC1FAC26EC2927DE5 /* Macaw-dummy.m */,
+				044470C7DF90634015E0AA678F9A1781 /* Macaw-Info.plist */,
+				8E9BA7003ADC64D98742A3D0E4DBEBAB /* Macaw-prefix.pch */,
+				BF45A7378DAA8767F7817658D9BA0E39 /* Macaw-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Macaw";
+			sourceTree = "<group>";
+		};
+		1637AC194243C25A9B9755620C567B8C /* Macaw */ = {
+			isa = PBXGroup;
+			children = (
+				6A9209782EB38D82C8C66465417EEE9B /* Align.swift */,
+				D6C31DB89060840BF598E81CE2F4994D /* AlphaEffect.swift */,
+				68A636D17C9FFC571A7FC17F7DBB6B53 /* AnimatableVariable.swift */,
+				4A15593F4907A9545E128BCC99B4A361 /* Animation.swift */,
+				C9BCACE6BA64DDEEB40D8D5D7A783BDF /* AnimationCache.swift */,
+				039DDAC686B23DFB09891C027A7E8B72 /* AnimationImpl.swift */,
+				5076F2C1F3E091F94F1DA6BF504F9DD3 /* AnimationProducer.swift */,
+				AA24CEFBD2044EE6572BAC58CBFAA83B /* AnimationSequence.swift */,
+				58534346C5C2DF22693B5964CA1BA337 /* AnimationUtils.swift */,
+				EE59F933AD847348737C19F17A8C83CD /* AnimOperators.swift */,
+				74A48CA20367DA548663E7C6359CBCF0 /* Arc.swift */,
+				27228199C9F15329C3702C2BB65054DE /* AspectRatio.swift */,
+				D3E44F8B91A85EC59C0E8ED9AFE8BAE1 /* Baseline.swift */,
+				2805D2CC34DE7A7E24ED2B1445C11740 /* BlendEffect.swift */,
+				3F840B31C6C1E4354E57C90332BA17A2 /* BoundsUtils.swift */,
+				BE804D4506E058135E610324D11858C6 /* CAAnimationClosure.swift */,
+				FC70DD99630F346C997EB8861C3A8C22 /* CGFloat+Double.swift */,
+				58F6FAA7F591A1DDDCC8778C4703AB52 /* CGMappings.swift */,
+				593D55E5E78D6E039830B966EFFE5109 /* Circle.swift */,
+				7468338EB7A4DC95F1FEA5520EBABF89 /* Color.swift */,
+				7B5514EB3CB51617D8B0DE49B8835130 /* ColorMatrix.swift */,
+				64F2FE6B7D33F4367F043145F3B6DE2E /* ColorMatrixEffect.swift */,
+				F2EA02C79A6321789F6DEF2F8B51B090 /* CombinationAnimationGenerator.swift */,
+				B2475C8DA34F4E4C9FE945C559A83F74 /* CombineAnimation.swift */,
+				9FF91D8AAC5943158A0A5A985EBE34F2 /* Common_iOS.swift */,
+				0D8FCC7E0BBC6367D53CDB6C4444C69B /* Common_macOS.swift */,
+				FB0EAF3D9EA47F7B9ACF737CE93BCD2E /* ContentLayout.swift */,
+				A5D6ECCBB31FD1A5FEB07B61493057DB /* ContentsAnimation.swift */,
+				F476E0E29DD7E53AACA83D079AC7B745 /* ContentsInterpolation.swift */,
+				389136D67C8CE2920A977D9922866725 /* CSSParser.swift */,
+				071F6FF869CF38E29EC8A9AB3B62B2B0 /* DescriptionExtensions.swift */,
+				F7EB24586AFE339598C7735731D5E877 /* Disposable.swift */,
+				3936478628FC65BBB91296639A3817E2 /* DoubleInterpolation.swift */,
+				F0F6ED50447EC8593BE6B6FD5E201953 /* Drawable.swift */,
+				15429C140D66BDF504D6325E5309A690 /* Easing.swift */,
+				4E908AFB4BA165271849AC90E50802E4 /* Effect.swift */,
+				4C28E20C0F5825CD1D46CAE0F5B650F4 /* Ellipse.swift */,
+				D4EB471E7B4392C23BB2A56B2D091661 /* Event.swift */,
+				467F90D313272D1D8FB0EC4D6CB09122 /* Fill.swift */,
+				3321B71A6CAE7D440BD05A6C97A40D20 /* FillInterpolation.swift */,
+				3D6202FCEF716E404386BAA63DD6EC89 /* Font.swift */,
+				AAF29602A60769D78000335590726AB2 /* FuncBounds.swift */,
+				135A6D2E5142DEF9104AF10B80FDDC99 /* GaussianBlur.swift */,
+				67FAD99E79992344C23BE9ADA83555F9 /* GeomUtils.swift */,
+				52989657C770DA00B147116E4966144B /* Gradient.swift */,
+				E4ADB22845071B89AF7EFB2AC38194D7 /* Graphics_iOS.swift */,
+				C9CF97869F8A99BFDB07AAA0C32C4733 /* Graphics_macOS.swift */,
+				169CD70FEC8BB4A6E2D9E06D7E59619C /* Group.swift */,
+				123B4A453E6665961F00474E7101C731 /* GroupDisposable.swift */,
+				D7E3400003ADB98DFCF6CDE7B55451A2 /* GroupRenderer.swift */,
+				0EA675B9E25C7EC77655F4912D88E994 /* Image.swift */,
+				17497DEEB230616918F7B12EBD91AE72 /* ImageRenderer.swift */,
+				98A3B828DB044CBD40D995A4EE0010BB /* Insets.swift */,
+				A858DA53EA07FE08E6783C40F47B506F /* Interpolable.swift */,
+				A72AF4970E5F48F1ED09A5CB4F764853 /* Line.swift */,
+				504C92ED208EAB56E44A2A7BFF93F1E8 /* LinearGradient.swift */,
+				BB35661C03D82F07651C71F131EA244D /* LineCap.swift */,
+				7BA99999757241D033B22877F5CE7723 /* LineJoin.swift */,
+				0004EC0FC3133FE31383D4A8DEF62F09 /* Locus.swift */,
+				CD86EB17862AE0B83B7B48CE5E2786AB /* LocusInterpolation.swift */,
+				A910331FF03A5B2590E7E69550B6AF1F /* MacawView.swift */,
+				402CE05694E140FA2358D81B99020166 /* MacawView+PDF.swift */,
+				72F1DDF013CA30D48E5E9A0E48DB699B /* MBezierPath+Extension_macOS.swift */,
+				2DFC3B549079171083E2D0ADD52B56E7 /* MCAMediaTimingFillMode_iOS.swift */,
+				EDD7A6CB266609B5895402DAC15B27D7 /* MCAMediaTimingFillMode_macOS.swift */,
+				D05DE7A4BE721A1BBAB0327BDE4303B4 /* MCAMediaTimingFunctionName_iOS.swift */,
+				A0C302778EC77A884BAD65A05D4851D0 /* MCAMediaTimingFunctionName_macOS.swift */,
+				299215E5C7CE2F8D5E690476B533B1A3 /* MCAShapeLayerLineCap_iOS.swift */,
+				B7C238E98E45D5499F53FC5B665DBFDF /* MCAShapeLayerLineCap_macOS.swift */,
+				E5B3638077B98CA57E017BA877A51B18 /* MCAShapeLayerLineJoin_iOS.swift */,
+				7B328371AE65B463B7FA7B1D86598929 /* MCAShapeLayerLineJoin_macOS.swift */,
+				DEEB1F5F6AE3000DF54BC2FF84272F99 /* MDisplayLink.swift */,
+				53AD680CF6AF612A4AF14DD23609BA99 /* MDisplayLink_iOS.swift */,
+				6F43CA01D6D27783D2B6954F77221043 /* MDisplayLink_macOS.swift */,
+				7E25D925B7299C5F1BCF9554D2BEA440 /* MorphingAnimation.swift */,
+				06F6A3928D315AB3B895EF590653D352 /* MorphingGenerator.swift */,
+				CDD3850E4F02F63B8A2445FE81881618 /* MoveTo.swift */,
+				06828CA57E9C10C9B5EAA3BFEF054CAE /* MView_iOS.swift */,
+				60AD2A70447A22F0CB52B6C1D2D0DBAC /* MView_macOS.swift */,
+				C269CF00881B1C15B85923FA912F4A67 /* Node.swift */,
+				14D80B9D2C97B21A506C5F120B9124D7 /* NodeHashable.swift */,
+				7041C9BF92ED1685C6E27BB61115B32B /* NodeRenderer.swift */,
+				1B81971C5B407EE5199B4BF962A926BF /* NSTimer+Closure.swift */,
+				FBE2BF91AF53C1E16D30932E474A0A36 /* OffsetEffect.swift */,
+				13EA797DF50440BE3940AB45DE69C390 /* OpacityAnimation.swift */,
+				7561BE076BF883F405B75F57B3D76107 /* OpacityGenerator.swift */,
+				F25B3387ACE1375B39E248AEA2CA089F /* PanEvent.swift */,
+				A7F4380F444C55915755CA85ECD6D703 /* Path.swift */,
+				1CFA99B0C02F8160D8014ED3CB20FA7E /* PathBounds.swift */,
+				2822729F770C3E799302B9CFE95D01FB /* PathBuilder.swift */,
+				6C5FD1CC46FF055BB1EFFACCFCFC9B04 /* PathFunctions.swift */,
+				59D461ACAA3098F919459CA3C44ABD38 /* PathSegment.swift */,
+				D72994687692BE3180379282738A9D5A /* PathSegmentType.swift */,
+				0E6ADA7F51667F9A0F26794D0A34833C /* Pattern.swift */,
+				9D3C8DC3882BDF528677E3E56861B007 /* PinchEvent.swift */,
+				231079984E58731A67DE188EBD1F9775 /* Point.swift */,
+				EFA5259741EFD590E2BD1FAFE290603A /* Polygon.swift */,
+				03134A145535FCB22F2D7ED74B8A2B34 /* Polyline.swift */,
+				F4FA26D8C5BDD279B09406792EEBDEF7 /* RadialGradient.swift */,
+				636AFE37C72646313F11D34CD6677683 /* Rect.swift */,
+				5199CA577FEC6E2E15323823A451D699 /* RenderContext.swift */,
+				D5A235609A9958BD1B9FBCF8C70D672C /* RenderUtils.swift */,
+				17D6A80B96127060E05B5FF830523EF3 /* RotateEvent.swift */,
+				041B98A7F5DD0CE556ABCC7F9B1328CE /* RoundRect.swift */,
+				9C7DEA51BDE8FEED9AAB02C24D271E27 /* SceneUtils.swift */,
+				C436464A5E50C1D43F948C85451D12D4 /* Shape.swift */,
+				AA1F065AFF38CCB73E76EC6D95A5ED39 /* ShapeAnimation.swift */,
+				86AD6ED044E0F8C11F7EAEF43433849A /* ShapeAnimationGenerator.swift */,
+				9EDCD4200179B2B45BFF7EDC19DE48F0 /* ShapeInterpolation.swift */,
+				6B70061A8ACBD4F7F95DBC029F86565A /* ShapeLayer.swift */,
+				6E3BDB2B0532774236948ED87DC4A87C /* ShapeRenderer.swift */,
+				FB2ED6021C27C55ECD6D2E74C7E23565 /* Size.swift */,
+				B4BD57E522D489AA1AFC881ACBC8DD97 /* Stop.swift */,
+				78ED24E3F3BF8883C0859981DCF05F5D /* Stroke.swift */,
+				30EA0292C0594A1E84DB8018C7F9F69E /* StrokeInterpolation.swift */,
+				31CB19ABA9F53CD4507039645FBA00DA /* SVGCanvas.swift */,
+				0FC1776198C6DC68DA91BB0F39C0C679 /* SVGConstants.swift */,
+				20115646D7C652FB84F0B026E3916FCB /* SVGNodeLayout.swift */,
+				286FF4EBD830551DDCEA2FA10F46C073 /* SVGParser.swift */,
+				A0C700EB78B1D9C499FAB640CC85FE56 /* SVGParserError.swift */,
+				83A63E8B3E17275024C3A188576F7B45 /* SVGParserRegexHelper.swift */,
+				018D998EFEC1B2BBE89D905EC13F87C7 /* SVGSerializer.swift */,
+				8E90FE67F9E1B645875B90CB4D1F6E87 /* SVGView.swift */,
+				B765CD16C2399E5761D87002FD2B47A3 /* TapEvent.swift */,
+				81D9FE2C20265F1CC6DEC59BA1E3B975 /* Text.swift */,
+				A0000F2140A1234DBA06E0EF6A66B200 /* TextRenderer.swift */,
+				737C0D77B8B3CF00662C99A75D111AF3 /* TimingFunction.swift */,
+				A3C087C3E0B3CFB192EDA91DB277D00B /* Touchable.swift */,
+				EF02A8F83F08FD213884B8FB30DE0501 /* TouchEvent.swift */,
+				86F0A39928AD5F2788DFBA008D6F3DEB /* Transform.swift */,
+				1DE4F8CEA2B0E4936914F2376FC69221 /* TransformAnimation.swift */,
+				2DAFA5AB438A23D641A01ACFAD08CBC2 /* TransformedLocus.swift */,
+				68AD90EE2257C5D6A6CD3442EA92C122 /* TransformGenerator.swift */,
+				352E8FA4AB08935F720B1CE413F33313 /* TransformHashable.swift */,
+				E73D1726BCA091314BD822217032735D /* TransformInterpolation.swift */,
+				0EC0A59C6D418594CFBC63DE45AFD879 /* UIImage2Image.swift */,
+				9AA6B1F6FDD02B47ADB585AEC07E1F4E /* Variable.swift */,
+				12DECA2DB26E9723A4EDA49286CEF11B /* Support Files */,
+			);
+			name = Macaw;
+			path = Macaw;
+			sourceTree = "<group>";
+		};
+		2294A95EA936542F3AD5EB84B6E344AA /* RAMAnimatedTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				89307717E1D41390E80DFA697CF42B26 /* RAMAnimatedTabBarController.swift */,
+				7DDC0CD93F0D229BDAB8A57EC1E1302B /* RAMAnimatedTabBarController+BottomLine.swift */,
+				DC146899A05D6A8BEFFC7AA8B624FA8B /* RAMBadge.swift */,
+				3743802298E401B3B42A34BCB5C6ADF2 /* RAMBounceAnimation.swift */,
+				B1B4C45465B058129DBB07732D426073 /* RAMFrameItemAnimation.swift */,
+				A37B9AD76A5FCB11855866B51CB82508 /* RAMFumeAnimation.swift */,
+				72823AB2E754BF6C14EA7FB21EC443A7 /* RAMItemAnimationProtocol.swift */,
+				C77F3F57C8A0AE3B55FDAE256BA19CDF /* RAMRotationAnimation.swift */,
+				99A104AD20E7ABC59632C40ED4C2B2D1 /* RAMTransitionItemAnimations.swift */,
+				A60A536E575AB65B5C32962F4EB885F3 /* Support Files */,
+			);
+			name = RAMAnimatedTabBarController;
+			path = RAMAnimatedTabBarController;
+			sourceTree = "<group>";
+		};
+		2D99D36406D3F3794166523B56342E84 /* SWXMLHash */ = {
+			isa = PBXGroup;
+			children = (
+				720E19D9360043259F6A62EDA1F122B9 /* shim.swift */,
+				3A0F48108500DD982C794D32AFF597C4 /* SWXMLHash.swift */,
+				97CD52287888354C14568E4A4EDE305B /* XMLIndexer+XMLIndexerDeserializable.swift */,
+				0437AB9661161DE7EDDAB0C5A186F65A /* Support Files */,
+			);
+			name = SWXMLHash;
+			path = SWXMLHash;
+			sourceTree = "<group>";
+		};
+		34AFD79AF7375FEE55E601B983485F74 /* FanMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9C7B708FE9A12669F7C094BD84A26C02 /* FanMenu.h */,
+				33A1338B9A59929C515D06F9F210CD52 /* FanMenu.swift */,
+				A58E712C444395FE976565E0ADCD26FF /* Support Files */,
+			);
+			name = FanMenu;
+			path = FanMenu;
+			sourceTree = "<group>";
+		};
+		50BF5377C539752FD6B7860D5F1FC64A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E1D45DBADEF48A807641C6B5047D33D3 /* Foundation.framework */,
+				07EB32C1648A535B788EC481E17EE825 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A58E712C444395FE976565E0ADCD26FF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3590583E83E90F55CE331C455DA562DB /* FanMenu.modulemap */,
+				ECE0EB88A43732F0C451F91D7E8AD8D3 /* FanMenu.xcconfig */,
+				A14F281B1CE2BBEE9A885E00D67B0693 /* FanMenu-dummy.m */,
+				ED0E0D875350803E7353E1E2F5906F9F /* FanMenu-Info.plist */,
+				17BE49E1501EB0EED84A373C970A6613 /* FanMenu-prefix.pch */,
+				FC8A4CF3BF14E03581564082EDDBBA7E /* FanMenu-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FanMenu";
+			sourceTree = "<group>";
+		};
+		A5C26A0BA575C7687C19BC08500CB2D5 /* BATabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E6AA4EF04618132B4B049CFCB84BE93C /* BATabBar.h */,
+				4190104610673C5F5BF731A9AE3F89F2 /* BATabBar.m */,
+				0CFB877E87D7263332C5E6DF737D6B2A /* BATabBarBadge.h */,
+				F6672A178CADB7AADCCE1BE546CC9355 /* BATabBarBadge.m */,
+				20AD024D253A06C91F1C19007C47E5C8 /* BATabBarController.h */,
+				B384305E97B6DF482BB58C402F6C6515 /* BATabBarController.m */,
+				0BF821DC966D82670CBC371CCF3791AE /* BATabBarItem.h */,
+				73664E07DEEAD794EBD13132DCD98C57 /* BATabBarItem.m */,
+				BAF371864BACE82970DD3552653F1B1C /* UIColor+ColorWithHex.h */,
+				D564C4E81C4B37D72859044ED16505A7 /* UIColor+ColorWithHex.m */,
+				F67884DDC5285EF8F84B212A9AAC2532 /* Support Files */,
+			);
+			name = BATabBarController;
+			path = BATabBarController;
+			sourceTree = "<group>";
+		};
+		A60A536E575AB65B5C32962F4EB885F3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				74C3BCCAD6C75ECFD0EE0CB08928DBB4 /* RAMAnimatedTabBarController.modulemap */,
+				5C5EC32150D17700D5E3DF1013D2D223 /* RAMAnimatedTabBarController.xcconfig */,
+				173118998BFA1F56E417A34B9D1667A4 /* RAMAnimatedTabBarController-dummy.m */,
+				3445D32A586F9C263667FFB05554C2FF /* RAMAnimatedTabBarController-Info.plist */,
+				04FF3FD92ACB11D7667B89D0A21B8B87 /* RAMAnimatedTabBarController-prefix.pch */,
+				BB9424EADCD05463EF2AD687A060120A /* RAMAnimatedTabBarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RAMAnimatedTabBarController";
+			sourceTree = "<group>";
+		};
+		AB9B8AA36A686C95109ABDCD016FC123 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56337A71CF058EA709EF0839C8B579D0 /* Macaw.framework */,
+				51ABFA9373D30D3423ADEEBA57FDA3AF /* Masonry.framework */,
+				08A3DFEFB170AA980212C9453610824C /* SWXMLHash.framework */,
+				50BF5377C539752FD6B7860D5F1FC64A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD44F2D3231075BF66F5049CC9D5DEC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2A769F2A8222BFFE5EF33E17B162DB1 /* Masonry.modulemap */,
+				76279697263223F3B4F1D642DF571A88 /* Masonry.xcconfig */,
+				5EDE2B55904A67B42B04FEF0F82A9C57 /* Masonry-dummy.m */,
+				5338EF3234F3EE667625F8A7372BE888 /* Masonry-Info.plist */,
+				C9E66FF0C58D547B2A69DB56964C526C /* Masonry-prefix.pch */,
+				49A328E4E3BF98DF2EAB8B2803D92894 /* Masonry-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				AB9B8AA36A686C95109ABDCD016FC123 /* Frameworks */,
+				E7E7036B262BA39BBA2B813E40D42EF8 /* Pods */,
+				E1BFA8065EE00F33DEB46961692F00E6 /* Products */,
+				0AF7BCB47077BA77934CA57561A8A343 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E1BFA8065EE00F33DEB46961692F00E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				608BD1CF1926390AF431282E26E48999 /* BATabBarController.framework */,
+				8D05CD24EC1EC846AB3BBC8F477707AE /* FanMenu.framework */,
+				C387806CE1F7FC814E9EE915DD03EEF9 /* Macaw.framework */,
+				1FFED36A657123030ABB700256D73F15 /* Masonry.framework */,
+				3BA1743FF207C935163853891B11805C /* Pods_ManufactureApp.framework */,
+				6803A26D713572B4FCF211333F946956 /* RAMAnimatedTabBarController.framework */,
+				97D014AD6344E543FEDB1FD1F8F2BFEC /* SWXMLHash.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7E7036B262BA39BBA2B813E40D42EF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5C26A0BA575C7687C19BC08500CB2D5 /* BATabBarController */,
+				34AFD79AF7375FEE55E601B983485F74 /* FanMenu */,
+				1637AC194243C25A9B9755620C567B8C /* Macaw */,
+				EB4427DF62CDC92BECB11336488702A8 /* Masonry */,
+				2294A95EA936542F3AD5EB84B6E344AA /* RAMAnimatedTabBarController */,
+				2D99D36406D3F3794166523B56342E84 /* SWXMLHash */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB4427DF62CDC92BECB11336488702A8 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				5BC5111EC80B6C017EA1602D1095FDFF /* MASCompositeConstraint.h */,
+				632849ADE26DF0DB34549200EE4FFF48 /* MASCompositeConstraint.m */,
+				57CF3EF344CBE0BCCBB518089726895D /* MASConstraint.h */,
+				A1288E767A8C1F61818BF3965F58421A /* MASConstraint.m */,
+				966662F9368E7CDB9FB0BF888FD22010 /* MASConstraint+Private.h */,
+				BA64334AAEB6F229BCC5BD0FA0E74E7C /* MASConstraintMaker.h */,
+				E9392E1FE47C4208B0DEA103306970BE /* MASConstraintMaker.m */,
+				59FBF8A72189D0B485ED7F3F280C82F2 /* MASLayoutConstraint.h */,
+				59F2957AC486371332C00F142A297260 /* MASLayoutConstraint.m */,
+				F9444D04370477C86AE42E4D6F1A1D78 /* Masonry.h */,
+				64204A8E0112E8B99AEEF17B7425B6B0 /* MASUtilities.h */,
+				EB48375A91D372E2BEEEA3B491C38E4B /* MASViewAttribute.h */,
+				2B7247E0774526FF307897CD2B9A9D01 /* MASViewAttribute.m */,
+				1E469B8DA458A64EB649DA25726BCDB5 /* MASViewConstraint.h */,
+				7CCE2620A7204538F708331400D5F5C9 /* MASViewConstraint.m */,
+				5F0E4AF181B8CCA19FF2C8D1863726D1 /* NSArray+MASAdditions.h */,
+				639B0CAAC754055AE9C678267683A7C7 /* NSArray+MASAdditions.m */,
+				032F7DA8681D30A695D8522BD3893417 /* NSArray+MASShorthandAdditions.h */,
+				04B927FB2FA6BE13801EC585FD0551B8 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				208EADCE28544774D69C82CCA5B02F3D /* NSLayoutConstraint+MASDebugAdditions.m */,
+				B15DD37CC1340A442F3E7A494EDB94F6 /* View+MASAdditions.h */,
+				4AA137687C719B98D116D3B94B0A1B31 /* View+MASAdditions.m */,
+				7C2BDB6017424D13E164E0DCB092E565 /* View+MASShorthandAdditions.h */,
+				4CF079CBFC1163293B906F7D535712E7 /* ViewController+MASAdditions.h */,
+				D8F031CD9C30248170BDE34537BC4A61 /* ViewController+MASAdditions.m */,
+				BD44F2D3231075BF66F5049CC9D5DEC1 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		EDC230651F1F77F122C2BAFD25A48239 /* Pods-ManufactureApp */ = {
+			isa = PBXGroup;
+			children = (
+				58A686A7F37D963CDA42047D3C2B4826 /* Pods-ManufactureApp.modulemap */,
+				D59C23560B0F2E69C6F13DBB70C49EBB /* Pods-ManufactureApp-acknowledgements.markdown */,
+				BE835702D77C7620511FFA1E4591F0ED /* Pods-ManufactureApp-acknowledgements.plist */,
+				3E9C0F0B1134960AA98016365A869E55 /* Pods-ManufactureApp-dummy.m */,
+				FB2753CF91301E08E90FD1A86710057E /* Pods-ManufactureApp-frameworks.sh */,
+				4E5FB3CEAD6FF50FD474B2612B9C4510 /* Pods-ManufactureApp-Info.plist */,
+				B71DEAA782A3FDFF201A2C6505D2ECC4 /* Pods-ManufactureApp-umbrella.h */,
+				AAF17607C93CCD4BF8390D7CDBAA5BFA /* Pods-ManufactureApp.debug.xcconfig */,
+				2C6BF0187E65474AECC723D01992EBFA /* Pods-ManufactureApp.release.xcconfig */,
+			);
+			name = "Pods-ManufactureApp";
+			path = "Target Support Files/Pods-ManufactureApp";
+			sourceTree = "<group>";
+		};
+		F67884DDC5285EF8F84B212A9AAC2532 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9A0EF4658525DC8403D70EF4AD6C059 /* BATabBarController.modulemap */,
+				363B17A52AFCF3707377437B8B91CD11 /* BATabBarController.xcconfig */,
+				1BBFD76C4D2FEAC6E96CD5BBEB804829 /* BATabBarController-dummy.m */,
+				BC5D24FBDC953D61E42169E32768C127 /* BATabBarController-Info.plist */,
+				F84A7F6185DA7342E38FDE4A11080EE3 /* BATabBarController-prefix.pch */,
+				762C2C559C456C8B69E7619EF7A08C2D /* BATabBarController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BATabBarController";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2E6430B4AF13E1165B960F17F9FD799A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757EE7E494F4E17615D0467A48A391B2 /* BATabBar.h in Headers */,
+				E7A4CDDD01BAE6C82A32949A3371880F /* BATabBarBadge.h in Headers */,
+				DBA9D0B617E60568ED0EF03C1A432CAE /* BATabBarController-umbrella.h in Headers */,
+				53BA8AA1F8932B3CA97ACB37F1C374FD /* BATabBarController.h in Headers */,
+				790836E1F79B9EEF8078C69CCAAAB397 /* BATabBarItem.h in Headers */,
+				643DB55DBCEAB9D5A96C66414F6B959A /* UIColor+ColorWithHex.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36956F8DEF65A62739AFB455A6E79F82 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B944CE19A3989044C7052670612E7FD /* Macaw-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81466BB672C6AD9A94F9DC9F88B84812 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97365AD3739DA5C400D5585CD375A4E /* MASCompositeConstraint.h in Headers */,
+				D24B20076CBA5D6E1601F77964BBD5E1 /* MASConstraint+Private.h in Headers */,
+				FCB1636B6077D045DE267F7BD351A675 /* MASConstraint.h in Headers */,
+				FFD2E027B6134A8D4FD6DDB984155088 /* MASConstraintMaker.h in Headers */,
+				796F9FB997E532C0268F2386B64E26DB /* MASLayoutConstraint.h in Headers */,
+				5EECDAC282E3F72E6CCB34F8856DD911 /* Masonry-umbrella.h in Headers */,
+				661D1B51CE80A6899658663ACAB92CC2 /* Masonry.h in Headers */,
+				9FD07B7C3BFECAC265F38718D6449809 /* MASUtilities.h in Headers */,
+				1478DC2AE9484A35D9A52E44EB4B0CFD /* MASViewAttribute.h in Headers */,
+				D4611455E35A2C5E424DA24DF10DEF8C /* MASViewConstraint.h in Headers */,
+				D67F97FA83C6B2FDCE99C9181989F6C8 /* NSArray+MASAdditions.h in Headers */,
+				C9880C6918F4FAD6EC56F61DDADDB314 /* NSArray+MASShorthandAdditions.h in Headers */,
+				E241188B74464522A2DA4A002B05495E /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				BD020E60709F7F70CC5224A86A57B0C4 /* View+MASAdditions.h in Headers */,
+				1C453D96CF2A084B12E1827A6EA888C5 /* View+MASShorthandAdditions.h in Headers */,
+				5C0DA31CACF3F1DD19A27D5AD506CAEC /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8439E36FDD95865430398DDD732DEF78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4E4AF00E56E637692F08BCE4AFA773 /* SWXMLHash-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D98B579D3B8BCDEAB29DC42079AB2D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D29CF4CF82EE4250D277A22D4F40E8 /* Pods-ManufactureApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5695EE171058D709272BE4C9CD28E93 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7EE4C4D53B2EAA7A507438963269D3 /* FanMenu-umbrella.h in Headers */,
+				40163483253DF5B623C872F9D083BA3E /* FanMenu.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9B33561487B4CA4402B93492FBB3553 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7F3092CFF1A81FAF376F2100F85CEC3 /* RAMAnimatedTabBarController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1CBE890FB81E7706B0A7C85EF7657002 /* Macaw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98A658E66608F9EE2A25BCC00A14FA4 /* Build configuration list for PBXNativeTarget "Macaw" */;
+			buildPhases = (
+				36956F8DEF65A62739AFB455A6E79F82 /* Headers */,
+				9603D382F3E4E06117729D4DDE81AF2F /* Sources */,
+				2FA089FB86DAEF1DAAA9AB67A2785B41 /* Frameworks */,
+				0E8034C70CE88AB0DCBDE36363934D12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1417B42EC405AA3CBBDADDD3107A36C /* PBXTargetDependency */,
+			);
+			name = Macaw;
+			productName = Macaw;
+			productReference = C387806CE1F7FC814E9EE915DD03EEF9 /* Macaw.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		37152A05E82F6B8FFFA45DAECD171A64 /* BATabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 238A98187F40583F06A2D07B5F9B9BA0 /* Build configuration list for PBXNativeTarget "BATabBarController" */;
+			buildPhases = (
+				2E6430B4AF13E1165B960F17F9FD799A /* Headers */,
+				7E4929466860C8F42FED773A86AB8E66 /* Sources */,
+				BAB26C34887C708EAB19CC2940DC596C /* Frameworks */,
+				7AF1465313632046FC849A6D07FB3490 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3C8EE71A30FFC5C998B1D58BB2B82C2 /* PBXTargetDependency */,
+			);
+			name = BATabBarController;
+			productName = BATabBarController;
+			productReference = 608BD1CF1926390AF431282E26E48999 /* BATabBarController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D12FFA28D4A40764C9E94634320DE2D8 /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				81466BB672C6AD9A94F9DC9F88B84812 /* Headers */,
+				38331C689C7A830D371060F5CAA4E234 /* Sources */,
+				D0CAE8FC4939825672D26F2052071074 /* Frameworks */,
+				BD05DEA8D4625A818D48FB079A1DCC0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 1FFED36A657123030ABB700256D73F15 /* Masonry.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63678F9A594800CBC7006B45EAB7886B /* SWXMLHash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 197ADEBB76CC1F1C816400D82CEA8184 /* Build configuration list for PBXNativeTarget "SWXMLHash" */;
+			buildPhases = (
+				8439E36FDD95865430398DDD732DEF78 /* Headers */,
+				D7304085D33D6C5892F496BEA97047F5 /* Sources */,
+				8EFB54ED08BE24592F5570D0DC1F4FCA /* Frameworks */,
+				30D90EF74F9832E647718C1559A0A721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWXMLHash;
+			productName = SWXMLHash;
+			productReference = 97D014AD6344E543FEDB1FD1F8F2BFEC /* SWXMLHash.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ADF0D1C4F76610CC8E797DDC63C507F3 /* FanMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FFAAE3C9ECACA48C2D14FC5EBB3895E /* Build configuration list for PBXNativeTarget "FanMenu" */;
+			buildPhases = (
+				C5695EE171058D709272BE4C9CD28E93 /* Headers */,
+				99EE4ADE60899E925797ACA11A939283 /* Sources */,
+				E6B52F94BB0E44B02B27E37E4F3F2874 /* Frameworks */,
+				86FB1D97B2D85BCB245EAD55EE1D8067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0100C272DADD288260D57E4613026541 /* PBXTargetDependency */,
+			);
+			name = FanMenu;
+			productName = FanMenu;
+			productReference = 8D05CD24EC1EC846AB3BBC8F477707AE /* FanMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DED4DEF356A163E50925101C3C7C0FB9 /* RAMAnimatedTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1FCE74D70726F9070958DECA8C25D5 /* Build configuration list for PBXNativeTarget "RAMAnimatedTabBarController" */;
+			buildPhases = (
+				C9B33561487B4CA4402B93492FBB3553 /* Headers */,
+				2F9EBF64796E6E1E297175A05A478AD2 /* Sources */,
+				5BA1BAAFB81121FE38FA80E039BE7E86 /* Frameworks */,
+				69C21D48B6C2AFC53C38446FE362661A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RAMAnimatedTabBarController;
+			productName = RAMAnimatedTabBarController;
+			productReference = 6803A26D713572B4FCF211333F946956 /* RAMAnimatedTabBarController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAEB2CCD38532589D88C12808EB284B7 /* Pods-ManufactureApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48D3269F25B9825FA32EF649799A20C8 /* Build configuration list for PBXNativeTarget "Pods-ManufactureApp" */;
+			buildPhases = (
+				8D98B579D3B8BCDEAB29DC42079AB2D7 /* Headers */,
+				B38750DBD95D870D6EFEFD70CB425D61 /* Sources */,
+				E49E1BC37CF305224E9204D337981275 /* Frameworks */,
+				A31D36FF08032C8F2AC00A0D6F77C7C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BB747909B070057C5E84F97D9C53954 /* PBXTargetDependency */,
+				FFA9340E0BDAFAD938CA4C085371636F /* PBXTargetDependency */,
+				0E49C391F5553317EB9EC35035F77883 /* PBXTargetDependency */,
+				7559C305EB8B0E85955EFED4BB191E3D /* PBXTargetDependency */,
+				A1DF5D22A1FD8E26C15AA58713F1B0D2 /* PBXTargetDependency */,
+				3C8D2B502F18F61426557DC12A34C2D0 /* PBXTargetDependency */,
+			);
+			name = "Pods-ManufactureApp";
+			productName = "Pods-ManufactureApp";
+			productReference = 3BA1743FF207C935163853891B11805C /* Pods_ManufactureApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E1BFA8065EE00F33DEB46961692F00E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37152A05E82F6B8FFFA45DAECD171A64 /* BATabBarController */,
+				ADF0D1C4F76610CC8E797DDC63C507F3 /* FanMenu */,
+				1CBE890FB81E7706B0A7C85EF7657002 /* Macaw */,
+				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
+				FAEB2CCD38532589D88C12808EB284B7 /* Pods-ManufactureApp */,
+				DED4DEF356A163E50925101C3C7C0FB9 /* RAMAnimatedTabBarController */,
+				63678F9A594800CBC7006B45EAB7886B /* SWXMLHash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E8034C70CE88AB0DCBDE36363934D12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D90EF74F9832E647718C1559A0A721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69C21D48B6C2AFC53C38446FE362661A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AF1465313632046FC849A6D07FB3490 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FB1D97B2D85BCB245EAD55EE1D8067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31D36FF08032C8F2AC00A0D6F77C7C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD05DEA8D4625A818D48FB079A1DCC0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F9EBF64796E6E1E297175A05A478AD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8821BA50B02A5A9507303BF81A871B1 /* RAMAnimatedTabBarController+BottomLine.swift in Sources */,
+				F99DCAF4A18E487FDC16666B4D4F0346 /* RAMAnimatedTabBarController-dummy.m in Sources */,
+				F6A55782608C5DBBB995EF9C2FB2EC12 /* RAMAnimatedTabBarController.swift in Sources */,
+				1CFD153C1663E326439E29886F46265B /* RAMBadge.swift in Sources */,
+				9107E554AF648893C2AC5DB880D4E527 /* RAMBounceAnimation.swift in Sources */,
+				E081E53812DF48C2E6E1819016349495 /* RAMFrameItemAnimation.swift in Sources */,
+				4205E4544A8F0DF171037CE730C23600 /* RAMFumeAnimation.swift in Sources */,
+				57765BAFB040F6735441AB67E7E79B9F /* RAMItemAnimationProtocol.swift in Sources */,
+				F188A8E15A925526B322CEAF4F64C819 /* RAMRotationAnimation.swift in Sources */,
+				D35CF1AD14A6DAE78EF96025EA357C21 /* RAMTransitionItemAnimations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38331C689C7A830D371060F5CAA4E234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC6EC9C05C606800B7D9D6D1C703FCB /* MASCompositeConstraint.m in Sources */,
+				905F6A52DD44DFEFB1E1D5313AFD2086 /* MASConstraint.m in Sources */,
+				B4275F416B2CF9F4D9D8764255D9AF7F /* MASConstraintMaker.m in Sources */,
+				64804C35CFA3C8E455D6DB0321E610D9 /* MASLayoutConstraint.m in Sources */,
+				9F7C8FD411AE5AC21B16DB6C93592EAB /* Masonry-dummy.m in Sources */,
+				6339CFCF5CD7C37BC537310175298CCE /* MASViewAttribute.m in Sources */,
+				39189585BABBA68DEFB62017A899C3A2 /* MASViewConstraint.m in Sources */,
+				145536189C1150DBCA7F980604C29DE9 /* NSArray+MASAdditions.m in Sources */,
+				ADD189E2A2AE02531A7372477EE681B2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				E54731D9345843DCE0B688FA2F78FDF5 /* View+MASAdditions.m in Sources */,
+				78E77BCD76C447B700C31545DD6FD55C /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E4929466860C8F42FED773A86AB8E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B992A737ADBC88649867375029147E4A /* BATabBar.m in Sources */,
+				F5FDA8598F9FFF56F3332912637567DE /* BATabBarBadge.m in Sources */,
+				FBB8137F210BBD3B9347E426760628EF /* BATabBarController-dummy.m in Sources */,
+				B502E43D1547D09FEB56D91A39F960D4 /* BATabBarController.m in Sources */,
+				6B9830711C0154E313A59EBBE8F4186A /* BATabBarItem.m in Sources */,
+				D62A38F0116D38B3C128B3636FB1C51E /* UIColor+ColorWithHex.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9603D382F3E4E06117729D4DDE81AF2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E6441A1D2B711E6BAECDB6518650D4A /* Align.swift in Sources */,
+				3E5E44DDE7FA80DDBCD5B03A6FF5B541 /* AlphaEffect.swift in Sources */,
+				8CE54B68AD9CEBD8A8BCED2C4EDDE2C1 /* AnimatableVariable.swift in Sources */,
+				24E92DAF0095BBC9E1FEAAF75FB64839 /* Animation.swift in Sources */,
+				BD899311740359288FBCEEF4B0B1AE37 /* AnimationCache.swift in Sources */,
+				3D2352BBB389D44066072CEA703DFDEF /* AnimationImpl.swift in Sources */,
+				184E6875F3C7C1CE41654FC2D8625462 /* AnimationProducer.swift in Sources */,
+				76E3BC520E35B64721D841FCD0F2CFCA /* AnimationSequence.swift in Sources */,
+				D48C49EB33CACCFDC65DEE47C3B5E6A8 /* AnimationUtils.swift in Sources */,
+				E866DC4BBE4EA50B1ED13790FCEBC5A2 /* AnimOperators.swift in Sources */,
+				FB30DDFA68FF252F07D3AB955CDAD8DC /* Arc.swift in Sources */,
+				2BB2F32E052CB7E989CC0031472271D7 /* AspectRatio.swift in Sources */,
+				FE82FFD1748A68165ED12C07EDBEF2B4 /* Baseline.swift in Sources */,
+				2BB0529A95B3E5938B9494AA5E6D8D42 /* BlendEffect.swift in Sources */,
+				6FFBC620B661DFF2DE1CEA73ECC715B9 /* BoundsUtils.swift in Sources */,
+				95161EBFFD533EF18C9DBEA037C0192B /* CAAnimationClosure.swift in Sources */,
+				F5869DEC4359017CC27167EC371C4608 /* CGFloat+Double.swift in Sources */,
+				ACA1ECBB4211177188595313EB69262D /* CGMappings.swift in Sources */,
+				9C82759D328C0FA1756FB1DB2DA52EE5 /* Circle.swift in Sources */,
+				4A8823039DA52707783E5C00B58F57C9 /* Color.swift in Sources */,
+				DAE4017EE6070461387F9C4A3B18BE8A /* ColorMatrix.swift in Sources */,
+				AC137CAD673FF642CEF708BCB1406619 /* ColorMatrixEffect.swift in Sources */,
+				619AC98C733104F58DB4697AE953697C /* CombinationAnimationGenerator.swift in Sources */,
+				7539C104C026AF8784D77F92F24AF612 /* CombineAnimation.swift in Sources */,
+				240E910628ACFB7242AC857DBA3B2224 /* Common_iOS.swift in Sources */,
+				A21081E4DB1D75784C7BE0D2B9439B46 /* Common_macOS.swift in Sources */,
+				9FEFC3902DA8E97D4F5B5A217A890F9F /* ContentLayout.swift in Sources */,
+				0C7EA92E4512A4E5836979E215B69030 /* ContentsAnimation.swift in Sources */,
+				A2925C34FA67EC3A6AFB701169CAA4F0 /* ContentsInterpolation.swift in Sources */,
+				18853E3FB0D20AA17CCD3103BD895D7D /* CSSParser.swift in Sources */,
+				C1EC6FE3E242AA1FE2FF2C148231396E /* DescriptionExtensions.swift in Sources */,
+				818042DE51346A6DAEE3C225F5CC1838 /* Disposable.swift in Sources */,
+				03A12F3617BB6913560AFC5F117457EE /* DoubleInterpolation.swift in Sources */,
+				EA6EB9E177D8B8A9B0ED74A2BF36B3C8 /* Drawable.swift in Sources */,
+				BF706F7FC28312E77C98E443AC3AD673 /* Easing.swift in Sources */,
+				CB9FD9DEEDAA33E46B6245A4A9A12489 /* Effect.swift in Sources */,
+				97EC69146A2CD2F32A50257439CCE335 /* Ellipse.swift in Sources */,
+				6DC158285A40A054960C402F3E49A0C2 /* Event.swift in Sources */,
+				AF1B712BDC19B70E4D120BCEF7240C2F /* Fill.swift in Sources */,
+				B9E31261A942EED25F56D3525D55AC42 /* FillInterpolation.swift in Sources */,
+				EF01AD2BDB660259E6239BA198FB7434 /* Font.swift in Sources */,
+				14D60D17F59626603278EE66006192FC /* FuncBounds.swift in Sources */,
+				1DFA790759D8A35902015F8E4AD80122 /* GaussianBlur.swift in Sources */,
+				8222CB97B22B6F08A859FD02A16E03E9 /* GeomUtils.swift in Sources */,
+				8624375B8663AD56CA95409051844096 /* Gradient.swift in Sources */,
+				BB90E4B8EE02493A65595E753C20205A /* Graphics_iOS.swift in Sources */,
+				8824A878A156B4021CBCCB0EA5108B87 /* Graphics_macOS.swift in Sources */,
+				118CB3B1F2F1D5FAA33A19A81FE8D729 /* Group.swift in Sources */,
+				7AEA4AFDEA41E13242991EEE319876DA /* GroupDisposable.swift in Sources */,
+				7279055A35E664176F4A33ACE2954877 /* GroupRenderer.swift in Sources */,
+				177C34618EAD9D7D1F558C208D958A8D /* Image.swift in Sources */,
+				11E3E749D04EBCD8BF012782A6E5FCEB /* ImageRenderer.swift in Sources */,
+				127E98B71754AC9BED137E35BA6397B7 /* Insets.swift in Sources */,
+				55B9431C54C148F54D0BE7412C18442B /* Interpolable.swift in Sources */,
+				AA38EB3D5B3D765ACC8452056FB11D8C /* Line.swift in Sources */,
+				4B0FD378A41651D8B8B0D9C0703118C7 /* LinearGradient.swift in Sources */,
+				A501760CE2AE5B176B4CD57CAA124D26 /* LineCap.swift in Sources */,
+				5D44C77EBA71600833897E67DA5A3FDB /* LineJoin.swift in Sources */,
+				A2F33BF35422C32793981E052C7B2483 /* Locus.swift in Sources */,
+				E728C7DEEF302EB307B559E8E3DC6AA8 /* LocusInterpolation.swift in Sources */,
+				982A69C912E76A12EA9093BB9C36A5A9 /* Macaw-dummy.m in Sources */,
+				D7286D7A3B500D5ACC7ED39CD9507891 /* MacawView+PDF.swift in Sources */,
+				81758D1E82020201E60B26DDEF72FE8B /* MacawView.swift in Sources */,
+				AE583C1AC810C60F6DDDDAF13BC45A2A /* MBezierPath+Extension_macOS.swift in Sources */,
+				2CAF0579F575E6332AABFC4D9D1AB1D7 /* MCAMediaTimingFillMode_iOS.swift in Sources */,
+				C5502BFA79CCCBB3D0B7517838906D0C /* MCAMediaTimingFillMode_macOS.swift in Sources */,
+				734E845B512983B38AEAA8EE2206E4C0 /* MCAMediaTimingFunctionName_iOS.swift in Sources */,
+				682BD4F6D991D5BCDF975B12E0B953A2 /* MCAMediaTimingFunctionName_macOS.swift in Sources */,
+				1DA6F9819C1264ECA32B75BCE3BDE653 /* MCAShapeLayerLineCap_iOS.swift in Sources */,
+				7A9AD34B4883B4824C5E37700D7E00B0 /* MCAShapeLayerLineCap_macOS.swift in Sources */,
+				2D3DB9A18C7162465C4B66E2339A093A /* MCAShapeLayerLineJoin_iOS.swift in Sources */,
+				C1AA546FCB8EF2B540480005C7CC3E54 /* MCAShapeLayerLineJoin_macOS.swift in Sources */,
+				9F0EB838CDAFFFC6D20A06BDFC2B48C8 /* MDisplayLink.swift in Sources */,
+				3C6565CBA60F83D4BDD9A1A61D66B37D /* MDisplayLink_iOS.swift in Sources */,
+				171D8DA5D8C158E08D3D114CB5A3DAB5 /* MDisplayLink_macOS.swift in Sources */,
+				12D435FA97183D7E476141512494B966 /* MorphingAnimation.swift in Sources */,
+				D5ED124FB4B8E5488CCF4D589E23A5F2 /* MorphingGenerator.swift in Sources */,
+				B230A1C6BC29F3A4C724A26680BB4ECD /* MoveTo.swift in Sources */,
+				56704BCDAC4F5665D732D465CED832EC /* MView_iOS.swift in Sources */,
+				98B7A5175EBBEF35AF9993AAB2191A98 /* MView_macOS.swift in Sources */,
+				FF2D4E27E274BC300A9DE5F519AE0038 /* Node.swift in Sources */,
+				FF445434DEF5AA44DECD838295C6EB7E /* NodeHashable.swift in Sources */,
+				6CF1E665A060A791D5A524738FBFA2CD /* NodeRenderer.swift in Sources */,
+				6E8B63056B4C1937D6CF280E697E8235 /* NSTimer+Closure.swift in Sources */,
+				C79896FA352872024BFC1B09BE955146 /* OffsetEffect.swift in Sources */,
+				3EE8BE876F001384103E58ADB0815E12 /* OpacityAnimation.swift in Sources */,
+				556A1D19563F913D8F1A70779C595621 /* OpacityGenerator.swift in Sources */,
+				2114F31C6AAFF39BD75C39D0733B4179 /* PanEvent.swift in Sources */,
+				758340F6F0B92E61ABAF9A4DB0891836 /* Path.swift in Sources */,
+				0F6ADBE36FDB8EB63425EF4A08EDA465 /* PathBounds.swift in Sources */,
+				C3FF187DE22720ECEFAA6474419939BC /* PathBuilder.swift in Sources */,
+				F3A0F40C192255C71C217ADBF3AE7529 /* PathFunctions.swift in Sources */,
+				9544129F2D86873CC20F07529A84408D /* PathSegment.swift in Sources */,
+				5DA65715BCB583221AC37F6BC5AA6D57 /* PathSegmentType.swift in Sources */,
+				BB74C104E3D4B3EE0EFAA970F61E266C /* Pattern.swift in Sources */,
+				70D8FFCA9ACE9F8254E80B1795E28646 /* PinchEvent.swift in Sources */,
+				D059948A4BBE12E247AAC1EB5D2FC41D /* Point.swift in Sources */,
+				E058B6E742189EBBE1EC4E0CFF62A35A /* Polygon.swift in Sources */,
+				D1DFB0589064BF250A928B09A85A158B /* Polyline.swift in Sources */,
+				4C10BAECD53254D153DC9398A1A134E7 /* RadialGradient.swift in Sources */,
+				A50EF4AAF1B92759A0EAC03D993F5147 /* Rect.swift in Sources */,
+				10C38619E4B81DC39D37C5EF60C339B2 /* RenderContext.swift in Sources */,
+				A0863BB256A6F36AFF1CA48C03408A8F /* RenderUtils.swift in Sources */,
+				91ECB587633F13DCE331EBFAE4035ED4 /* RotateEvent.swift in Sources */,
+				66E659E18AEBF2CB324E6D116E050BC0 /* RoundRect.swift in Sources */,
+				EB95B41ACAE4A012F4A14E1DF4C78219 /* SceneUtils.swift in Sources */,
+				A40B920B2FF4B13E64BCD2FC9684B73E /* Shape.swift in Sources */,
+				7C7870A63D1631A4282B7744CC1531CD /* ShapeAnimation.swift in Sources */,
+				5F9662965A0E39AA56C9E5D50D7EE75B /* ShapeAnimationGenerator.swift in Sources */,
+				9BBF35C0D14578DE9905F3C662B33058 /* ShapeInterpolation.swift in Sources */,
+				5A4088FD6423484DA645336A082839A0 /* ShapeLayer.swift in Sources */,
+				62F5728C6A4DFBF7008A3BF9FBF9E9E5 /* ShapeRenderer.swift in Sources */,
+				E7433F2E1891AB0F2CA0F5CB7C8FA82D /* Size.swift in Sources */,
+				EF83D6BC1C59B3BAC7BCE7C9381B62C4 /* Stop.swift in Sources */,
+				87756868E152C6578756E8A83D4128BC /* Stroke.swift in Sources */,
+				7D305408274B0A435C1A9E8C3A48CA38 /* StrokeInterpolation.swift in Sources */,
+				E04B1E480D0A952E0D86F8558CA2E385 /* SVGCanvas.swift in Sources */,
+				3E75FB7F259E616EBEFADF34B03D0CA1 /* SVGConstants.swift in Sources */,
+				9D0C03502C9F317EDC55015615453002 /* SVGNodeLayout.swift in Sources */,
+				C27C2B688329377F8E6F135AD4A91B65 /* SVGParser.swift in Sources */,
+				EFF6DAD5E947CABC3B266F9D6CC421AF /* SVGParserError.swift in Sources */,
+				2F3C24387373062366D6E41120609328 /* SVGParserRegexHelper.swift in Sources */,
+				6ED57C551B213DC38B3396F2B3A7272A /* SVGSerializer.swift in Sources */,
+				7759F392B2810A5C5F026A284F356EA8 /* SVGView.swift in Sources */,
+				DD8701F9128E24EEC97DEC88804C104E /* TapEvent.swift in Sources */,
+				9EE93965C398C16CD6C6F196EF930F28 /* Text.swift in Sources */,
+				5790614C5ECB704437010E53EC1C9445 /* TextRenderer.swift in Sources */,
+				9F7352FEDDD1906A2D966BF18FCFBC03 /* TimingFunction.swift in Sources */,
+				8D2EEF71466ACD10CA973985F47D10A6 /* Touchable.swift in Sources */,
+				D98113563186F277E8B6D24A972184D0 /* TouchEvent.swift in Sources */,
+				CBBE2DA6E09E5585535B76FADCFB4865 /* Transform.swift in Sources */,
+				0421A9624B52C7DCE7F5B71C57BA1EEC /* TransformAnimation.swift in Sources */,
+				70D148CEA812F83AC7267CB1D75B9B5F /* TransformedLocus.swift in Sources */,
+				FA3FD9F7DEE96E914D46F5FA9391231E /* TransformGenerator.swift in Sources */,
+				5CAF0332C05C46A27FB69DBFD539FC4C /* TransformHashable.swift in Sources */,
+				F95DDEB097C2C15AC8A1B8AE745C604D /* TransformInterpolation.swift in Sources */,
+				321C257860E001BA0E27C44AACA193D3 /* UIImage2Image.swift in Sources */,
+				C80C2D7A8178585A07628C03FC13256A /* Variable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99EE4ADE60899E925797ACA11A939283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B35F3E40021C9FAA6A3378E233F5ECB6 /* FanMenu-dummy.m in Sources */,
+				BAF6ED1CB7BED6D5DB308DAEAB2CF32B /* FanMenu.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38750DBD95D870D6EFEFD70CB425D61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C3F2B33734B01C6EC07BF96E3E4B76 /* Pods-ManufactureApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7304085D33D6C5892F496BEA97047F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B093364077D4C307EEF3B6AC4AAB2D4 /* shim.swift in Sources */,
+				83EB8DAA58EC3190A713B68AFFD6C1D3 /* SWXMLHash-dummy.m in Sources */,
+				7A81772DDFCC416A109E67BC830E7500 /* SWXMLHash.swift in Sources */,
+				3808E04CA9CDF5B1644D69F6447FCC88 /* XMLIndexer+XMLIndexerDeserializable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0100C272DADD288260D57E4613026541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Macaw;
+			target = 1CBE890FB81E7706B0A7C85EF7657002 /* Macaw */;
+			targetProxy = 6343421B7B1B412D544900FE6AE833F8 /* PBXContainerItemProxy */;
+		};
+		0E49C391F5553317EB9EC35035F77883 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Macaw;
+			target = 1CBE890FB81E7706B0A7C85EF7657002 /* Macaw */;
+			targetProxy = E9DEC16AFACE4DD2C759AC58DE8A01A0 /* PBXContainerItemProxy */;
+		};
+		3C8D2B502F18F61426557DC12A34C2D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWXMLHash;
+			target = 63678F9A594800CBC7006B45EAB7886B /* SWXMLHash */;
+			targetProxy = E3258BF03B3C7A62E4776B9554CF0FF8 /* PBXContainerItemProxy */;
+		};
+		5BB747909B070057C5E84F97D9C53954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BATabBarController;
+			target = 37152A05E82F6B8FFFA45DAECD171A64 /* BATabBarController */;
+			targetProxy = 3E3F14633317633BD222290904427046 /* PBXContainerItemProxy */;
+		};
+		7559C305EB8B0E85955EFED4BB191E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = BF395C5B12DEEA39C420D6235B0ED457 /* PBXContainerItemProxy */;
+		};
+		A1DF5D22A1FD8E26C15AA58713F1B0D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RAMAnimatedTabBarController;
+			target = DED4DEF356A163E50925101C3C7C0FB9 /* RAMAnimatedTabBarController */;
+			targetProxy = 927E09F3BC700FC63E596EFDC98F15E8 /* PBXContainerItemProxy */;
+		};
+		C3C8EE71A30FFC5C998B1D58BB2B82C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 1D99601913778B9A766C778FB22FE7AC /* PBXContainerItemProxy */;
+		};
+		E1417B42EC405AA3CBBDADDD3107A36C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWXMLHash;
+			target = 63678F9A594800CBC7006B45EAB7886B /* SWXMLHash */;
+			targetProxy = 5D8B2E856B242FEF8A358B31D334FB85 /* PBXContainerItemProxy */;
+		};
+		FFA9340E0BDAFAD938CA4C085371636F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FanMenu;
+			target = ADF0D1C4F76610CC8E797DDC63C507F3 /* FanMenu */;
+			targetProxy = 333B2BCE0770807673C771E7F95AAE44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1E986366DE32D6D0FFF9B53764CD694C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE0EB88A43732F0C451F91D7E8AD8D3 /* FanMenu.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FanMenu/FanMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FanMenu/FanMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FanMenu/FanMenu.modulemap";
+				PRODUCT_MODULE_NAME = FanMenu;
+				PRODUCT_NAME = FanMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25C8C0D5619419530A748BDF0157746C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 363B17A52AFCF3707377437B8B91CD11 /* BATabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BATabBarController/BATabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BATabBarController/BATabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BATabBarController/BATabBarController.modulemap";
+				PRODUCT_MODULE_NAME = BATabBarController;
+				PRODUCT_NAME = BATabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E48E5D9F03805D4E468037BEEA2D7B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C5EC32150D17700D5E3DF1013D2D223 /* RAMAnimatedTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = RAMAnimatedTabBarController;
+				PRODUCT_NAME = RAMAnimatedTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		638CFA7EE7031FF663B1221BBB5686ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B9580F4609C332AC101E66DB571606 /* Macaw.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Macaw/Macaw-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Macaw/Macaw-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Macaw/Macaw.modulemap";
+				PRODUCT_MODULE_NAME = Macaw;
+				PRODUCT_NAME = Macaw;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6D2DA5EDBFAC3FFE055FDB9E0CC73CA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41F147F062E86F461A30C37595911B04 /* SWXMLHash.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWXMLHash/SWXMLHash-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
+				PRODUCT_MODULE_NAME = SWXMLHash;
+				PRODUCT_NAME = SWXMLHash;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		710FB60B9BB3B28F97959C10DDCB9C39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C5EC32150D17700D5E3DF1013D2D223 /* RAMAnimatedTabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RAMAnimatedTabBarController/RAMAnimatedTabBarController.modulemap";
+				PRODUCT_MODULE_NAME = RAMAnimatedTabBarController;
+				PRODUCT_NAME = RAMAnimatedTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7B34F0979F724A1DD6597CB421353706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B9580F4609C332AC101E66DB571606 /* Macaw.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Macaw/Macaw-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Macaw/Macaw-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Macaw/Macaw.modulemap";
+				PRODUCT_MODULE_NAME = Macaw;
+				PRODUCT_NAME = Macaw;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F6E1915E9377BAA3EB9BC5BB123B7EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE0EB88A43732F0C451F91D7E8AD8D3 /* FanMenu.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FanMenu/FanMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FanMenu/FanMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FanMenu/FanMenu.modulemap";
+				PRODUCT_MODULE_NAME = FanMenu;
+				PRODUCT_NAME = FanMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		873DAD761CC9A19DA5D07F7458B70F31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41F147F062E86F461A30C37595911B04 /* SWXMLHash.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWXMLHash/SWXMLHash-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
+				PRODUCT_MODULE_NAME = SWXMLHash;
+				PRODUCT_NAME = SWXMLHash;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0119323B92DDE9F6396D3AA6D8AE23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAF17607C93CCD4BF8390D7CDBAA5BFA /* Pods-ManufactureApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ManufactureApp/Pods-ManufactureApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ManufactureApp/Pods-ManufactureApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A6A2E84EA73E2F8728A9E87A4BC36C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76279697263223F3B4F1D642DF571A88 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF8555FB79D2994B212676D6021D8C76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C6BF0187E65474AECC723D01992EBFA /* Pods-ManufactureApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ManufactureApp/Pods-ManufactureApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ManufactureApp/Pods-ManufactureApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D9EE71CFA2772D778B0B72417B97F616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 363B17A52AFCF3707377437B8B91CD11 /* BATabBarController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BATabBarController/BATabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BATabBarController/BATabBarController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BATabBarController/BATabBarController.modulemap";
+				PRODUCT_MODULE_NAME = BATabBarController;
+				PRODUCT_NAME = BATabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DACAC1A734D9D453CE247CB14905E81C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76279697263223F3B4F1D642DF571A88 /* Masonry.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		197ADEBB76CC1F1C816400D82CEA8184 /* Build configuration list for PBXNativeTarget "SWXMLHash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D2DA5EDBFAC3FFE055FDB9E0CC73CA5 /* Debug */,
+				873DAD761CC9A19DA5D07F7458B70F31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		238A98187F40583F06A2D07B5F9B9BA0 /* Build configuration list for PBXNativeTarget "BATabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C8C0D5619419530A748BDF0157746C /* Debug */,
+				D9EE71CFA2772D778B0B72417B97F616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48D3269F25B9825FA32EF649799A20C8 /* Build configuration list for PBXNativeTarget "Pods-ManufactureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0119323B92DDE9F6396D3AA6D8AE23B /* Debug */,
+				CF8555FB79D2994B212676D6021D8C76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FFAAE3C9ECACA48C2D14FC5EBB3895E /* Build configuration list for PBXNativeTarget "FanMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F6E1915E9377BAA3EB9BC5BB123B7EB /* Debug */,
+				1E986366DE32D6D0FFF9B53764CD694C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A1FCE74D70726F9070958DECA8C25D5 /* Build configuration list for PBXNativeTarget "RAMAnimatedTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E48E5D9F03805D4E468037BEEA2D7B6 /* Debug */,
+				710FB60B9BB3B28F97959C10DDCB9C39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D12FFA28D4A40764C9E94634320DE2D8 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACAC1A734D9D453CE247CB14905E81C /* Debug */,
+				A6A2E84EA73E2F8728A9E87A4BC36C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98A658E66608F9EE2A25BCC00A14FA4 /* Build configuration list for PBXNativeTarget "Macaw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B34F0979F724A1DD6597CB421353706 /* Debug */,
+				638CFA7EE7031FF663B1221BBB5686ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

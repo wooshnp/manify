@@ -30,17 +30,17 @@ class EditMenuViewController: UIViewController {
         fanMenu.items = [
           FanMenuButton(
             id: "tech",
-            image: "tech",
+            image: "technical",
             color: Color(val: 0x273C75)
           ),
           FanMenuButton(
             id: "orders",
-            image: "technical",
+            image: "order",
             color: Color(val: 0x273C75)
           ),
           FanMenuButton(
             id: "sells",
-            image: "technical",
+            image: "sells",
             color: Color(val: 0x273C75)
             )
         ]

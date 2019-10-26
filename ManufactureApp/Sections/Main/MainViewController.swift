@@ -46,6 +46,7 @@ class MainViewController: UIViewController {
         tabBarItem5.textColor = .black
         tabBarItem5.iconColor = .black
         
+        
         let viewController1 = MainMenuViewController()
         viewController1.tabBarItem = tabBarItem
         
@@ -64,8 +65,6 @@ class MainViewController: UIViewController {
         let viewControllers = [viewController1,viewController2,viewController3, viewController4, viewController5]
         // Do any additional setup after loading the view.
         let tabBarViewController = RAMAnimatedTabBarController()
-        
-
     
         tabBarViewController.viewControllers = viewControllers
         tabBarViewController.changeSelectedColor(.white, iconSelectedColor: .white)

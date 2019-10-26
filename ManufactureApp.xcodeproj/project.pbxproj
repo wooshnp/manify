@@ -39,6 +39,9 @@
 		29E5010E23606A8300F1D10F /* OrdersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29E5010C23606A8300F1D10F /* OrdersTableViewCell.xib */; };
 		29E50112236070FB00F1D10F /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E50110236070FB00F1D10F /* MapsViewController.swift */; };
 		29E50113236070FB00F1D10F /* MapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29E50111236070FB00F1D10F /* MapsViewController.xib */; };
+		29EF182E2364EAAD00A7BAFE /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF182D2364EAAD00A7BAFE /* SettingCell.swift */; };
+		29EF18302364EABC00A7BAFE /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF182F2364EABC00A7BAFE /* UserInfoHeader.swift */; };
+		29EF18322364EB4B00A7BAFE /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF18312364EB4B00A7BAFE /* SettingsSection.swift */; };
 		7B27C54929B3B7BAF4940563 /* Pods_ManufactureApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F74CF21696478EBC1ECE80 /* Pods_ManufactureApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,9 @@
 		29E5010C23606A8300F1D10F /* OrdersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrdersTableViewCell.xib; sourceTree = "<group>"; };
 		29E50110236070FB00F1D10F /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		29E50111236070FB00F1D10F /* MapsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsViewController.xib; sourceTree = "<group>"; };
+		29EF182D2364EAAD00A7BAFE /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		29EF182F2364EABC00A7BAFE /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
+		29EF18312364EB4B00A7BAFE /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
 		50630334F7BE896D48D7E851 /* Pods-ManufactureApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManufactureApp.release.xcconfig"; path = "Target Support Files/Pods-ManufactureApp/Pods-ManufactureApp.release.xcconfig"; sourceTree = "<group>"; };
 		87F74CF21696478EBC1ECE80 /* Pods_ManufactureApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManufactureApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -241,6 +247,7 @@
 		29E50100235F3F4300F1D10F /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				29EF182C2364E7D700A7BAFE /* SettingsCell */,
 				29E50101235F3F5500F1D10F /* SettingsViewController.swift */,
 				29E50102235F3F5500F1D10F /* SettingsViewController.xib */,
 			);
@@ -272,6 +279,16 @@
 				29E50111236070FB00F1D10F /* MapsViewController.xib */,
 			);
 			path = Maps;
+			sourceTree = "<group>";
+		};
+		29EF182C2364E7D700A7BAFE /* SettingsCell */ = {
+			isa = PBXGroup;
+			children = (
+				29EF182D2364EAAD00A7BAFE /* SettingCell.swift */,
+				29EF182F2364EABC00A7BAFE /* UserInfoHeader.swift */,
+				29EF18312364EB4B00A7BAFE /* SettingsSection.swift */,
+			);
+			path = SettingsCell;
 			sourceTree = "<group>";
 		};
 		327006E08DD9CBCDDAEE3D22 /* Frameworks */ = {
@@ -419,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29EF182E2364EAAD00A7BAFE /* SettingCell.swift in Sources */,
 				292E1307235492C7008A25FD /* Buttons.swift in Sources */,
 				292E13052354912C008A25FD /* ImageUser.swift in Sources */,
 				29900ABF234E4182001338C8 /* MainMenuViewController.swift in Sources */,
@@ -428,9 +446,11 @@
 				297351C2235DB2500093BB59 /* CarouselCollectionViewCell.swift in Sources */,
 				29E500FE235F3BAF00F1D10F /* ChatBotViewController.swift in Sources */,
 				29A3EB0C2358719A002577D5 /* BaseViewController.swift in Sources */,
+				29EF18322364EB4B00A7BAFE /* SettingsSection.swift in Sources */,
 				29C460B0234E23F700AEBD00 /* LoginViewController.swift in Sources */,
 				292E130323548DC6008A25FD /* TextField.swift in Sources */,
 				29E501082360564100F1D10F /* ConversationTableViewCell.swift in Sources */,
+				29EF18302364EABC00A7BAFE /* UserInfoHeader.swift in Sources */,
 				29E50103235F3F5500F1D10F /* SettingsViewController.swift in Sources */,
 				29C46094234DE8F100AEBD00 /* AppDelegate.swift in Sources */,
 				29E5010D23606A8300F1D10F /* OrdersTableViewCell.swift in Sources */,

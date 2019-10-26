@@ -46,7 +46,7 @@ import UIKit
            super.prepareForInterfaceBuilder()
         
         self.backgroundColor = .clear
-        self.layer.cornerRadius = 5
+        self.layer.cornerRadius = 30
         self.layer.borderWidth = 1
         self.layer.borderColor = UIColor(named: "darkBlueColor")?.cgColor
 //        self.backgroundColor = UIColor.blue

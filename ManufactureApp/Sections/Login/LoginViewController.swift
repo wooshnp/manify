@@ -65,11 +65,16 @@ class LoginViewController: BaseViewController {
     
     @IBAction func loginWasPressed(_ sender: Any) {
   
-        let vc = MainMenuViewController()
+        if iconTextField.text != "aaa", passwordTextField.text != "bbb" {
+            let alert = UIAlertController(title: "Error", message: "Your email or password is incorrect! Please try again.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(alert, animated: true, completion: nil)
+        } else {
+        let vc = MainViewController()
         vc.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(MainMenuViewController(), animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
         self.present(vc, animated: true)
-       
+        }
     }
        
     
@@ -121,7 +126,7 @@ class LoginViewController: BaseViewController {
                if(textField.tag == 10) //EMAIL
                {
                    //VALIDATE EMAIL
-                   if(textField.text == "aaa")
+                if(!(textField.text?.isEmpty ?? false))
                    {
                        isEmailOK = true
                    }
@@ -134,14 +139,13 @@ class LoginViewController: BaseViewController {
                if(textField.tag == 11) //PASSWORD
                {
                    //VALIDATE PASSWORD
-                   if(textField.text == "bbb")
+                if(!(textField.text?.isEmpty ?? false))
                    {
                        isPasswordOK = true
                    }
                    else
                    {
                        isPasswordOK = false
-
                    }
                }
                
@@ -150,6 +154,8 @@ class LoginViewController: BaseViewController {
                    self.loginButton.isEnabled = true
                }else{
                    self.loginButton.isEnabled = false
+
+                
                }
         
     }
@@ -167,6 +173,7 @@ class LoginViewController: BaseViewController {
            iconContainerView.addSubview(iconView)
            leftView = iconContainerView
            leftViewMode = .always
+        
         }
     
     
@@ -183,7 +190,7 @@ extension LoginViewController: UITextFieldDelegate{
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         print("\(textField.tag) end editing")
-        
+
         if(textField.tag == 10) //EMAIL
         {
             //VALIDATE EMAIL
@@ -210,14 +217,16 @@ extension LoginViewController: UITextFieldDelegate{
 
             }
         }
-        
-        
+
+
         if isPasswordOK , isEmailOK {
             self.loginButton.isEnabled = true
+            
         }else{
             self.loginButton.isEnabled = false
+            
         }
-        
+
     }
     
     

@@ -33,10 +33,6 @@ class MainMenuViewController: BaseViewController {
     
     // MARK: - Navigation
 
-    @IBAction func closedWasPressed(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
     
 }
 

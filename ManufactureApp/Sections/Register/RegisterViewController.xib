@@ -12,7 +12,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="ManufactureApp" customModuleProvider="target">
             <connections>
                 <outlet property="birthDate" destination="mkl-vM-OlP" id="Kxi-Z7-Gnq"/>
+                <outlet property="firstName" destination="KDZ-ug-1dJ" id="LzW-Xw-dX3"/>
                 <outlet property="getBack" destination="zew-Kt-bIr" id="EPr-RY-cyk"/>
+                <outlet property="lastName" destination="9kg-dV-rUP" id="uVw-eJ-BDz"/>
+                <outlet property="phoneNumber" destination="R86-us-jFl" id="QFc-Mq-bxR"/>
+                <outlet property="usrEmail" destination="uOO-BM-Yai" id="xiG-On-tEZ"/>
+                <outlet property="usrPwd" destination="i8R-ow-KWX" id="U7v-Dj-WS4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,7 +33,7 @@
                             <rect key="frame" x="40" y="444" width="334" height="57"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JmF-ND-VL5">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
@@ -54,7 +59,7 @@
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R86-us-jFl" userLabel="number" customClass="TextField" customModule="ManufactureApp" customModuleProvider="target">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R86-us-jFl" userLabel="number" customClass="TextField" customModule="ManufactureApp" customModuleProvider="target">
                             <rect key="frame" x="40" y="527" width="157" height="57"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -62,7 +67,10 @@
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZw-Ie-P5M" customClass="Buttons" customModule="ManufactureApp" customModuleProvider="target">
                             <rect key="frame" x="40" y="616" width="334" height="57"/>
-                            <state key="normal" title="Register"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <state key="normal" title="Register">
+                                <color key="titleColor" name="backgroundColor"/>
+                            </state>
                         </button>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KDZ-ug-1dJ" userLabel="name" customClass="TextField" customModule="ManufactureApp" customModuleProvider="target">
                             <rect key="frame" x="40" y="270" width="157" height="57"/>
@@ -82,6 +90,17 @@
                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgi-Ry-L0B">
+                            <rect key="frame" x="322" y="444" width="57" height="57"/>
+                            <state key="normal" title="Button" image="baseline_visibility_off_black_18dp"/>
+                            <connections>
+                                <action selector="iconAction:" destination="-1" eventType="touchUpInside" id="fki-4L-18d"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51h-IK-Pir">
+                            <rect key="frame" x="0.0" y="810" width="414" height="48"/>
+                            <color key="backgroundColor" name="darkBlueColor"/>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -92,9 +111,11 @@
                         <constraint firstAttribute="trailing" secondItem="JmF-ND-VL5" secondAttribute="trailing" id="7mX-J8-lp9"/>
                         <constraint firstItem="KDZ-ug-1dJ" firstAttribute="leading" secondItem="ocq-Ah-fZV" secondAttribute="leading" constant="40" id="7pl-hw-FIK"/>
                         <constraint firstItem="R86-us-jFl" firstAttribute="trailing" secondItem="KDZ-ug-1dJ" secondAttribute="trailing" id="87o-eO-Kc9"/>
+                        <constraint firstItem="bgi-Ry-L0B" firstAttribute="width" secondItem="i8R-ow-KWX" secondAttribute="height" multiplier="1:1" id="CLE-tz-9LV"/>
                         <constraint firstItem="uOO-BM-Yai" firstAttribute="height" secondItem="KDZ-ug-1dJ" secondAttribute="height" id="CUP-EU-Jgq"/>
                         <constraint firstItem="uOO-BM-Yai" firstAttribute="leading" secondItem="KDZ-ug-1dJ" secondAttribute="leading" id="DWC-LE-bGQ"/>
                         <constraint firstItem="i8R-ow-KWX" firstAttribute="height" secondItem="uOO-BM-Yai" secondAttribute="height" id="GZK-wT-ehs"/>
+                        <constraint firstItem="bgi-Ry-L0B" firstAttribute="bottom" secondItem="i8R-ow-KWX" secondAttribute="bottom" id="IFc-Wf-4Db"/>
                         <constraint firstItem="tZw-Ie-P5M" firstAttribute="top" secondItem="i8R-ow-KWX" secondAttribute="bottom" constant="115" id="JQQ-OY-nyH"/>
                         <constraint firstItem="R86-us-jFl" firstAttribute="height" secondItem="KDZ-ug-1dJ" secondAttribute="height" id="KvD-cY-WZl"/>
                         <constraint firstItem="mkl-vM-OlP" firstAttribute="leading" secondItem="9kg-dV-rUP" secondAttribute="leading" id="L9C-7r-5sF"/>
@@ -111,6 +132,7 @@
                         <constraint firstItem="mkl-vM-OlP" firstAttribute="height" secondItem="9kg-dV-rUP" secondAttribute="height" id="eJf-dk-DCW"/>
                         <constraint firstAttribute="bottom" secondItem="JmF-ND-VL5" secondAttribute="bottom" constant="750" id="egL-dY-hL8"/>
                         <constraint firstItem="R86-us-jFl" firstAttribute="top" secondItem="KDZ-ug-1dJ" secondAttribute="bottom" constant="200" id="iPp-1O-948"/>
+                        <constraint firstItem="bgi-Ry-L0B" firstAttribute="trailing" secondItem="i8R-ow-KWX" secondAttribute="trailing" constant="5" id="ita-3S-ClY"/>
                         <constraint firstItem="9kg-dV-rUP" firstAttribute="top" secondItem="ocq-Ah-fZV" secondAttribute="top" constant="270" id="jeh-rq-fRS"/>
                         <constraint firstItem="KDZ-ug-1dJ" firstAttribute="top" secondItem="ocq-Ah-fZV" secondAttribute="top" constant="270" id="kco-xC-QR0"/>
                         <constraint firstItem="tZw-Ie-P5M" firstAttribute="height" secondItem="i8R-ow-KWX" secondAttribute="height" id="lr2-TH-rTc"/>
@@ -118,6 +140,7 @@
                         <constraint firstItem="tZw-Ie-P5M" firstAttribute="leading" secondItem="i8R-ow-KWX" secondAttribute="leading" id="ozc-Pg-VgT"/>
                         <constraint firstItem="mkl-vM-OlP" firstAttribute="trailing" secondItem="9kg-dV-rUP" secondAttribute="trailing" id="qpg-WH-Ps9"/>
                         <constraint firstItem="DQr-dB-y8z" firstAttribute="leading" secondItem="ocq-Ah-fZV" secondAttribute="leading" constant="30" id="toi-cK-jlR"/>
+                        <constraint firstItem="bgi-Ry-L0B" firstAttribute="top" secondItem="i8R-ow-KWX" secondAttribute="top" id="v8U-ck-uxO"/>
                         <constraint firstItem="9kg-dV-rUP" firstAttribute="height" secondItem="KDZ-ug-1dJ" secondAttribute="height" id="vR7-SI-DWN"/>
                         <constraint firstItem="JmF-ND-VL5" firstAttribute="leading" secondItem="ocq-Ah-fZV" secondAttribute="leading" id="xrn-aT-cSd"/>
                         <constraint firstItem="uOO-BM-Yai" firstAttribute="trailing" secondItem="9kg-dV-rUP" secondAttribute="trailing" id="z4q-aA-2s5"/>
@@ -126,9 +149,13 @@
             </subviews>
             <color key="backgroundColor" name="backgroundColor"/>
             <constraints>
+                <constraint firstItem="51h-IK-Pir" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="40" id="0qd-Ez-ZxS"/>
+                <constraint firstItem="51h-IK-Pir" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DE6-9N-qVy"/>
                 <constraint firstItem="ocq-Ah-fZV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="I0j-DA-aDY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ocq-Ah-fZV" secondAttribute="bottom" id="UD5-7B-rXU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="51h-IK-Pir" secondAttribute="trailing" id="bDN-uo-8qs"/>
                 <constraint firstItem="ocq-Ah-fZV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="e3p-mS-pIL"/>
+                <constraint firstItem="51h-IK-Pir" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="810" id="tvH-Jw-q3I"/>
                 <constraint firstItem="ocq-Ah-fZV" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="wah-hY-7Kp"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -151,8 +178,12 @@
     </objects>
     <resources>
         <image name="back_btn" width="13" height="21"/>
+        <image name="baseline_visibility_off_black_18dp" width="36" height="36"/>
         <namedColor name="backgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkBlueColor">
+            <color red="0.15294117647058825" green="0.23529411764705882" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

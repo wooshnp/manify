@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,18 +22,45 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbA-0R-5cH">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9A-HD-PpV">
+                            <rect key="frame" x="0.0" y="-61" width="414" height="61"/>
+                            <color key="backgroundColor" name="darkBlueColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3P-X2-KrE">
+                            <rect key="frame" x="0.0" y="818" width="414" height="43"/>
+                            <color key="backgroundColor" name="darkBlueColor"/>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="p3P-X2-KrE" secondAttribute="bottom" constant="-43" id="2dF-cD-LQr"/>
+                        <constraint firstItem="F9A-HD-PpV" firstAttribute="top" secondItem="hbA-0R-5cH" secondAttribute="top" constant="-61" id="2fI-4H-A1o"/>
+                        <constraint firstItem="p3P-X2-KrE" firstAttribute="top" secondItem="hbA-0R-5cH" secondAttribute="top" constant="818" id="PEH-Ax-5OK"/>
+                        <constraint firstAttribute="bottom" secondItem="F9A-HD-PpV" secondAttribute="bottom" constant="818" id="ZBx-c8-cks"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="p3P-X2-KrE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0rd-gx-PJI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F9A-HD-PpV" secondAttribute="trailing" id="BnX-0f-tM9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hbA-0R-5cH" secondAttribute="bottom" id="LFN-oa-2QE"/>
                 <constraint firstItem="hbA-0R-5cH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="PKX-oE-Uhz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hbA-0R-5cH" secondAttribute="trailing" id="RtE-Sw-Wnf"/>
                 <constraint firstItem="hbA-0R-5cH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sDH-GE-ZUD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="p3P-X2-KrE" secondAttribute="trailing" id="sq3-dJ-cPg"/>
+                <constraint firstItem="F9A-HD-PpV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xZk-pD-MA1"/>
+                <constraint firstItem="p3P-X2-KrE" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="43" id="yo6-HW-hUA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="F9A-HD-PpV" secondAttribute="top" constant="61" id="zjL-cv-8lx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="131"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="darkBlueColor">
+            <color red="0.15294117647058825" green="0.23529411764705882" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

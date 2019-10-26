@@ -59,6 +59,7 @@ import UIKit
     }
     
     func drawImage(){
+        self.layer.cornerRadius = self.frame.height / 2
         imageView.frame = CGRect(x: 0.0, y: 0.0, width: self.bounds.width, height: self.bounds.height)
         self.addSubview(imageView)
         imageView.image = self.image

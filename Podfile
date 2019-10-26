@@ -6,6 +6,11 @@ target 'ManufactureApp' do
 pod 'FanMenu'
 pod 'BATabBarController'
 pod 'RAMAnimatedTabBarController'
+pod 'Firebase'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'SVProgressHUD'
+pod 'ChameleonFramework'
  
 end
 

@@ -42,6 +42,9 @@
 		29EF182E2364EAAD00A7BAFE /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF182D2364EAAD00A7BAFE /* SettingCell.swift */; };
 		29EF18302364EABC00A7BAFE /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF182F2364EABC00A7BAFE /* UserInfoHeader.swift */; };
 		29EF18322364EB4B00A7BAFE /* SettingsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF18312364EB4B00A7BAFE /* SettingsSection.swift */; };
+		29EF1837236592AD00A7BAFE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF1836236592AD00A7BAFE /* Extensions.swift */; };
+		29EF183C2365993500A7BAFE /* SearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF183B2365993500A7BAFE /* SearchInputView.swift */; };
+		29EF183E2365994500A7BAFE /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF183D2365994500A7BAFE /* SearchCell.swift */; };
 		7B27C54929B3B7BAF4940563 /* Pods_ManufactureApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F74CF21696478EBC1ECE80 /* Pods_ManufactureApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +88,9 @@
 		29EF182D2364EAAD00A7BAFE /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		29EF182F2364EABC00A7BAFE /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
 		29EF18312364EB4B00A7BAFE /* SettingsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSection.swift; sourceTree = "<group>"; };
+		29EF1836236592AD00A7BAFE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		29EF183B2365993500A7BAFE /* SearchInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInputView.swift; sourceTree = "<group>"; };
+		29EF183D2365994500A7BAFE /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		50630334F7BE896D48D7E851 /* Pods-ManufactureApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManufactureApp.release.xcconfig"; path = "Target Support Files/Pods-ManufactureApp/Pods-ManufactureApp.release.xcconfig"; sourceTree = "<group>"; };
 		87F74CF21696478EBC1ECE80 /* Pods_ManufactureApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManufactureApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -275,6 +281,8 @@
 		29E5010F236070D100F1D10F /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				29EF183A2365991B00A7BAFE /* SearchBar */,
+				29EF18332365926900A7BAFE /* Extensions */,
 				29E50110236070FB00F1D10F /* MapsViewController.swift */,
 				29E50111236070FB00F1D10F /* MapsViewController.xib */,
 			);
@@ -289,6 +297,23 @@
 				29EF18312364EB4B00A7BAFE /* SettingsSection.swift */,
 			);
 			path = SettingsCell;
+			sourceTree = "<group>";
+		};
+		29EF18332365926900A7BAFE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				29EF1836236592AD00A7BAFE /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		29EF183A2365991B00A7BAFE /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				29EF183B2365993500A7BAFE /* SearchInputView.swift */,
+				29EF183D2365994500A7BAFE /* SearchCell.swift */,
+			);
+			path = SearchBar;
 			sourceTree = "<group>";
 		};
 		327006E08DD9CBCDDAEE3D22 /* Frameworks */ = {
@@ -451,10 +476,13 @@
 				292E130323548DC6008A25FD /* TextField.swift in Sources */,
 				29E501082360564100F1D10F /* ConversationTableViewCell.swift in Sources */,
 				29EF18302364EABC00A7BAFE /* UserInfoHeader.swift in Sources */,
+				29EF1837236592AD00A7BAFE /* Extensions.swift in Sources */,
 				29E50103235F3F5500F1D10F /* SettingsViewController.swift in Sources */,
 				29C46094234DE8F100AEBD00 /* AppDelegate.swift in Sources */,
 				29E5010D23606A8300F1D10F /* OrdersTableViewCell.swift in Sources */,
 				297351C7235E14200093BB59 /* MainViewController.swift in Sources */,
+				29EF183C2365993500A7BAFE /* SearchInputView.swift in Sources */,
+				29EF183E2365994500A7BAFE /* SearchCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

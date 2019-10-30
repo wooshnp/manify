@@ -11,10 +11,13 @@ import UIKit
 enum OrderStatus {
     case inProgress
     case closed
+    case waiting
     
     var color: UIColor
     {
         switch self {
+            case .waiting:
+                return .red
             case .closed:
                 return .green
             case .inProgress:
@@ -43,6 +46,17 @@ enum OrderType{
         
     }
     
+    var typeMessage: String{
+        switch self {
+            case .sales:
+                return "New Sale"
+            case .assignment:
+                return "New Order"
+            case .tech:
+                return "New Technical"
+        }
+    }
+    
 }
 
 struct Order {
@@ -68,13 +82,13 @@ class OrdersTableViewCell: UITableViewCell {
     {
         let nib = UINib(nibName: identifier, bundle: .main)
         tableView.register(nib, forCellReuseIdentifier: identifier)
-        tableView.rowHeight = 100
-        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = 80
+        tableView.estimatedRowHeight = 80
     }
 
     override func awakeFromNib() {
         super.awakeFromNib()
-                self.orderStatus.layer.cornerRadius = 40 / 2
+                self.orderStatus.layer.cornerRadius = 32 / 2
 
     }
 
@@ -105,7 +119,7 @@ class OrdersTableViewCell: UITableViewCell {
     {
         self.orderStatus.layer.borderWidth = 1
         self.orderStatus.layer.borderColor = UIColor.gray.cgColor
-        self.orderStatus.layer.cornerRadius = 40 / 2
+        self.orderStatus.layer.cornerRadius = 32 / 2
         self.orderStatus.layer.masksToBounds = true
 
     }

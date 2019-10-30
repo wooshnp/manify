@@ -22,4 +22,9 @@ class BaseViewController: UIViewController {
     
     }
     
+    deinit {
+        print("DEINIT \(self)")
+    }
+    
+    
 }

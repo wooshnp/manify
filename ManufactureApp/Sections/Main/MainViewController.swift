@@ -13,9 +13,11 @@ class MainViewController: UIViewController {
 
     @IBOutlet var containerView: UIView!
     
+    var tabBarViewController = RAMAnimatedTabBarController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let tabBarItem = RAMAnimatedTabBarItem(title: "Home", image: UIImage(named: "baseline_house_white_18dp-1")!, tag: 0)
         tabBarItem.animation = RAMFlipBottomTransitionItemAnimations()
         tabBarItem.textFontSize = 12
@@ -64,7 +66,7 @@ class MainViewController: UIViewController {
         
         let viewControllers = [viewController1,viewController2,viewController3, viewController4, viewController5]
         // Do any additional setup after loading the view.
-        let tabBarViewController = RAMAnimatedTabBarController()
+        
     
         tabBarViewController.viewControllers = viewControllers
         tabBarViewController.changeSelectedColor(.white, iconSelectedColor: .white)

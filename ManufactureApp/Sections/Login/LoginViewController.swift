@@ -70,10 +70,7 @@ class LoginViewController: BaseViewController {
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             self.present(alert, animated: true, completion: nil)
         } else {
-        let vc = MainViewController()
-        vc.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(vc, animated: true)
-        self.present(vc, animated: true)
+            self.goToMain()
         }
     }
        
@@ -158,6 +155,21 @@ class LoginViewController: BaseViewController {
                 
                }
         
+    }
+    
+    private func goToMain(){
+        guard let window = self.view.window else { return }
+        let mainViewController = MainViewController()
+
+        let transition: CATransition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.moveIn
+        transition.subtype = CATransitionSubtype.fromBottom
+        window.layer.add(transition, forKey: nil)
+
+        window.rootViewController = mainViewController
+        window.makeKeyAndVisible()
     }
     
 }

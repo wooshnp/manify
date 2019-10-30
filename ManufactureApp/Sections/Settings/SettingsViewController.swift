@@ -27,8 +27,8 @@ class SettingsViewController: BaseViewController {
     
     func configureTableView() {
         tableView = UITableView()
-        tableView.delegate = self as! UITableViewDelegate
-        tableView.dataSource = self as! UITableViewDataSource
+        tableView.delegate = self
+        tableView.dataSource = self
         tableView.rowHeight = 60
         
         tableView.register(SettingCell.self, forCellReuseIdentifier: reuseIdentifier)
@@ -61,7 +61,18 @@ class SettingsViewController: BaseViewController {
 //        self.present(vc, animated: true)
 //
 //    }
-    
+    private func navigateToLogin(){
+        let window = self.view.window
+        let loginViewController = LoginViewController()
+        let transition: CATransition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.moveIn
+        transition.subtype = CATransitionSubtype.fromBottom
+        window?.layer.add(transition, forKey: nil)
+        window?.rootViewController = loginViewController
+        window?.makeKeyAndVisible()
+    }
     
 }
 
@@ -125,6 +136,13 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch section {
         case .Social:
+            switch SocialOptions(rawValue: indexPath.row) {
+            case .logout:
+                self.navigateToLogin()
+            default:
+                ()
+            }
+            
             print(SocialOptions(rawValue: indexPath.row)?.description)
         case .Communications:
             print(CommunicationOptions(rawValue: indexPath.row)?.description)

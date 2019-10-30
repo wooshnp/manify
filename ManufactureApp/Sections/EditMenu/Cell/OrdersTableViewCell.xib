@@ -43,7 +43,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="vqa-xB-xof">
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqa-xB-xof">
                                 <rect key="frame" x="0.0" y="48" width="309" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbB-GZ-nCm">
@@ -57,7 +57,6 @@
                                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="IHT-Wq-09u" secondAttribute="height" multiplier="1:1" id="0Hf-fa-WRO"/>
-                                            <constraint firstAttribute="height" constant="48" id="tgx-n7-UHb"/>
                                         </constraints>
                                     </view>
                                 </subviews>

@@ -31,9 +31,6 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFU-gn-USY" userLabel="funMenu" customClass="FanMenu" customModule="FanMenu">
                             <rect key="frame" x="20" y="600" width="374" height="218"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="218" id="MJf-W9-wHT"/>
-                            </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" name="backgroundColor"/>

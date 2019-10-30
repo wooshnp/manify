@@ -13,13 +13,17 @@ import Macaw
 class EditMenuViewController: UIViewController {
     
     
-  
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var fanMenu: FanMenu!
+    
+    var ordersList = [Order]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        fanMenu.backgroundColor = UIColor.init(named: "backgroundColor")
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        OrdersTableViewCell.register(on: self.tableView)
+        fanMenu.backgroundColor = .clear
         
       fanMenu.button = FanMenuButton(
           id: "main",
@@ -48,14 +52,26 @@ class EditMenuViewController: UIViewController {
         
         
         
-        // call before animation
+        
         fanMenu.onItemDidClick = { button in
-          print("ItemDidClick: \(button.id)")
+          
+            switch button.id {
+                case "sells":
+                    let saleOrder = Order(title: "testesaleOrder", description: "teste", date: Date(), type: .sales, status: .inProgress)
+                    self.ordersList.append(saleOrder)
+                case "orders":
+                    let ordersOrder = Order(title: "testeordersOrder", description: "teste", date: Date(), type: .assignment, status: .inProgress)
+                    self.ordersList.append(ordersOrder)
+                case "tech":
+                    let techOrder = Order(title: "testetechOrder", description: "teste", date: Date(), type: .tech, status: .inProgress)
+                    self.ordersList.append(techOrder)
+                default:
+                    ()
+            }
+            
+            self.tableView.reloadData()
         }
-        // call after animation
-        fanMenu.onItemWillClick = { button in
-          print("ItemWillClick: \(button.id)")
-        }
+       
         
         // distance between button and items
         fanMenu.menuRadius = 75
@@ -75,4 +91,26 @@ class EditMenuViewController: UIViewController {
         
     }
 
+}
+
+extension EditMenuViewController: UITableViewDelegate
+{
+    
+}
+
+
+extension EditMenuViewController: UITableViewDataSource
+{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.ordersList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: OrdersTableViewCell.identifier, for: indexPath) as! OrdersTableViewCell
+        cell.configure(with: self.ordersList[indexPath.row])
+        return cell
+    }
+    
+    
+    
 }

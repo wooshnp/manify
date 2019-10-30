@@ -3,4 +3,196 @@
    uuid = "E5140242-4AB8-4036-B647-DB627D9A40AC"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2609D782-3EE3-4A99-9884-554013323B1B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ManufactureApp/Sections/EditMenu/EditMenuViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2609D782-3EE3-4A99-9884-554013323B1B - 40919ccca7f5dafb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (FanMenu.FanMenuButton) -&gt; () in ManufactureApp.EditMenuViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ManufactureApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/127.0.0.1/Master&apos;s%20Degree/1st%20year/Ambientes%20Interativos/APP/ManufactureApp/ManufactureApp/Sections/EditMenu/EditMenuViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "2609D782-3EE3-4A99-9884-554013323B1B - 40919ccca7f5dafb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (FanMenu.FanMenuButton) -&gt; () in ManufactureApp.EditMenuViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ManufactureApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/127.0.0.1/Master&apos;s%20Degree/1st%20year/Ambientes%20Interativos/APP/ManufactureApp/ManufactureApp/Sections/EditMenu/EditMenuViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "2609D782-3EE3-4A99-9884-554013323B1B - 40919ccca7f5dafb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (FanMenu.FanMenuButton) -&gt; () in ManufactureApp.EditMenuViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ManufactureApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/127.0.0.1/Master&apos;s%20Degree/1st%20year/Ambientes%20Interativos/APP/ManufactureApp/ManufactureApp/Sections/EditMenu/EditMenuViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "560">
+               </Location>
+               <Location
+                  uuid = "2609D782-3EE3-4A99-9884-554013323B1B - 40919ccca7f5dafb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (FanMenu.FanMenuButton) -&gt; () in ManufactureApp.EditMenuViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ManufactureApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/127.0.0.1/Master&apos;s%20Degree/1st%20year/Ambientes%20Interativos/APP/ManufactureApp/ManufactureApp/Sections/EditMenu/EditMenuViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "980">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88F6D1A0-DF80-4377-8A66-2D0D7A63134F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ManufactureApp/Sections/EditMenu/EditMenuViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B186A3C3-DDBD-4416-A38F-8CB730BE078A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ManufactureApp/Sections/EditMenu/EditMenuViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F5D7904-BBBC-4A7C-9193-437AC791A5C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ManufactureApp/Sections/EditMenu/EditMenuViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B08E23F6-749D-4795-A32C-0B4670297286"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ManufactureApp/Sections/EditMenu/EditMenuViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "610B2129-4717-40BF-94A3-655CB91DAE0D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ManufactureApp/Sections/EditMenu/EditMenuViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F029C578-383A-47BC-97AD-2B310ADCC8FE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ManufactureApp/Sections/EditMenu/Cell/OrdersTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39048B5E-526E-4AF5-B284-4369FC76920B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ManufactureApp/Sections/EditMenu/Cell/OrdersTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "layoutSubviews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

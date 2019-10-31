@@ -8,10 +8,10 @@
 
 import UIKit
 
-enum OrderStatus {
+enum OrderStatus: CaseIterable {
+    case waiting
     case inProgress
     case closed
-    case waiting
     
     var color: UIColor
     {
@@ -25,6 +25,17 @@ enum OrderStatus {
         }
     }
     
+    var description: String
+    {
+        switch self {
+            case .waiting:
+                return "Waiting to attribute"
+            case .closed:
+                return "Closed"
+            case .inProgress:
+                return "In progress"
+        }
+    }
 }
 
 enum OrderType{
@@ -59,9 +70,10 @@ enum OrderType{
     
 }
 
-struct Order {
+struct Order: Equatable {
     let title: String
     let description: String
+    let address: String
     let date: Date
     let type: OrderType
     let status: OrderStatus
@@ -88,8 +100,8 @@ class OrdersTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-                self.orderStatus.layer.cornerRadius = 32 / 2
-
+        self.orderStatus.layer.cornerRadius = 32 / 2
+    
     }
 
     func configure(with order: Order)

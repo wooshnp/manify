@@ -123,7 +123,44 @@ class RegisterViewController: BaseViewController {
     }
     */
 
+    
+    
+    private func goToLogin(){
+        guard let window = self.view.window else { return }
+        let loginViewController = LoginViewController()
+
+        let transition: CATransition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.moveIn
+        transition.subtype = CATransitionSubtype.fromBottom
+        window.layer.add(transition, forKey: nil)
+
+        window.rootViewController = loginViewController
+        window.makeKeyAndVisible()
+        
+        
+    }
+    
+    @IBAction func registerWasPressed(_ sender: Any) {
+        if usrPwd.text?.isEmpty ?? true || birthDate.text?.isEmpty ?? true || phoneNumber.text?.isEmpty ?? true || firstName.text?.isEmpty ?? true || lastName.text?.isEmpty ?? true
+        {
+                           
+            let alertUnsuccess = UIAlertController(title: "Required fields missing", message: "Please fill all the fields!", preferredStyle: .alert)
+            alertUnsuccess.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(alertUnsuccess, animated: true, completion: nil)
+            
+        } else {
+             self.goToLogin()
+            
+        }
+        
+    }
+    
+    // MARK : validate number length , validate email
+    
     @IBAction func closeWasPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+
 }

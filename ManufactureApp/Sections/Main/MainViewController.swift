@@ -52,7 +52,7 @@ class MainViewController: UIViewController {
         let viewController1 = MainMenuViewController()
         viewController1.tabBarItem = tabBarItem
         
-        let viewController2 = EditMenuViewController()
+        let viewController2 = UINavigationController(rootViewController: EditMenuViewController())
         viewController2.tabBarItem = tabBarItem2
         
         let viewController3 = ChatBotViewController()

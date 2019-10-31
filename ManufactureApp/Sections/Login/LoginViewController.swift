@@ -65,7 +65,7 @@ class LoginViewController: BaseViewController {
     
     @IBAction func loginWasPressed(_ sender: Any) {
   
-        if iconTextField.text != "aaa", passwordTextField.text != "bbb" {
+        if iconTextField.text != "nuno@manify.pt", passwordTextField.text != "qwerty" {
             let alert = UIAlertController(title: "Error", message: "Your email or password is incorrect! Please try again.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
             self.present(alert, animated: true, completion: nil)

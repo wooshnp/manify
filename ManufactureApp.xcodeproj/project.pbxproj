@@ -27,6 +27,10 @@
 		29C460A9234E211800AEBD00 /* iphoneXR.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 29C460A8234E211800AEBD00 /* iphoneXR.mp4 */; };
 		29C460B0234E23F700AEBD00 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C460AE234E23F700AEBD00 /* LoginViewController.swift */; };
 		29C460B1234E23F700AEBD00 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29C460AF234E23F700AEBD00 /* LoginViewController.xib */; };
+		29CDBFBE236AF6C8004664FE /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CDBFBC236AF6C7004664FE /* OrderDetailViewController.swift */; };
+		29CDBFBF236AF6C8004664FE /* OrderDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29CDBFBD236AF6C7004664FE /* OrderDetailViewController.xib */; };
+		29CDBFC3236B02D4004664FE /* OrderEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CDBFC1236B02D4004664FE /* OrderEditViewController.swift */; };
+		29CDBFC4236B02D4004664FE /* OrderEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29CDBFC2236B02D4004664FE /* OrderEditViewController.xib */; };
 		29E500F9235F3B7300F1D10F /* EditMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E500F7235F3B7300F1D10F /* EditMenuViewController.swift */; };
 		29E500FA235F3B7300F1D10F /* EditMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29E500F8235F3B7300F1D10F /* EditMenuViewController.xib */; };
 		29E500FE235F3BAF00F1D10F /* ChatBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E500FC235F3BAF00F1D10F /* ChatBotViewController.swift */; };
@@ -73,6 +77,10 @@
 		29C460A8234E211800AEBD00 /* iphoneXR.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = iphoneXR.mp4; sourceTree = "<group>"; };
 		29C460AE234E23F700AEBD00 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		29C460AF234E23F700AEBD00 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		29CDBFBC236AF6C7004664FE /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		29CDBFBD236AF6C7004664FE /* OrderDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderDetailViewController.xib; sourceTree = "<group>"; };
+		29CDBFC1236B02D4004664FE /* OrderEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderEditViewController.swift; sourceTree = "<group>"; };
+		29CDBFC2236B02D4004664FE /* OrderEditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderEditViewController.xib; sourceTree = "<group>"; };
 		29E500F7235F3B7300F1D10F /* EditMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMenuViewController.swift; sourceTree = "<group>"; };
 		29E500F8235F3B7300F1D10F /* EditMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditMenuViewController.xib; sourceTree = "<group>"; };
 		29E500FC235F3BAF00F1D10F /* ChatBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotViewController.swift; sourceTree = "<group>"; };
@@ -230,9 +238,29 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		29CDBFBB236AF69A004664FE /* OrderDetail */ = {
+			isa = PBXGroup;
+			children = (
+				29CDBFBC236AF6C7004664FE /* OrderDetailViewController.swift */,
+				29CDBFBD236AF6C7004664FE /* OrderDetailViewController.xib */,
+			);
+			path = OrderDetail;
+			sourceTree = "<group>";
+		};
+		29CDBFC0236AFE5A004664FE /* OrderEdit */ = {
+			isa = PBXGroup;
+			children = (
+				29CDBFC1236B02D4004664FE /* OrderEditViewController.swift */,
+				29CDBFC2236B02D4004664FE /* OrderEditViewController.xib */,
+			);
+			path = OrderEdit;
+			sourceTree = "<group>";
+		};
 		29E500F6235F3B5900F1D10F /* EditMenu */ = {
 			isa = PBXGroup;
 			children = (
+				29CDBFC0236AFE5A004664FE /* OrderEdit */,
+				29CDBFBB236AF69A004664FE /* OrderDetail */,
 				29E5010A2360695700F1D10F /* Cell */,
 				29E500F7235F3B7300F1D10F /* EditMenuViewController.swift */,
 				29E500F8235F3B7300F1D10F /* EditMenuViewController.xib */,
@@ -403,10 +431,12 @@
 				29C4609E234DE8F400AEBD00 /* LaunchScreen.storyboard in Resources */,
 				29E50113236070FB00F1D10F /* MapsViewController.xib in Resources */,
 				297351C8235E14200093BB59 /* MainViewController.xib in Resources */,
+				29CDBFC4236B02D4004664FE /* OrderEditViewController.xib in Resources */,
 				29E500FA235F3B7300F1D10F /* EditMenuViewController.xib in Resources */,
 				29E50104235F3F5500F1D10F /* SettingsViewController.xib in Resources */,
 				297351C3235DB2500093BB59 /* CarouselCollectionViewCell.xib in Resources */,
 				29C4609B234DE8F400AEBD00 /* Assets.xcassets in Resources */,
+				29CDBFBF236AF6C8004664FE /* OrderDetailViewController.xib in Resources */,
 				29900AC0234E4182001338C8 /* MainMenuViewController.xib in Resources */,
 				29C460A9234E211800AEBD00 /* iphoneXR.mp4 in Resources */,
 			);
@@ -462,6 +492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29EF182E2364EAAD00A7BAFE /* SettingCell.swift in Sources */,
+				29CDBFC3236B02D4004664FE /* OrderEditViewController.swift in Sources */,
 				292E1307235492C7008A25FD /* Buttons.swift in Sources */,
 				292E13052354912C008A25FD /* ImageUser.swift in Sources */,
 				29900ABF234E4182001338C8 /* MainMenuViewController.swift in Sources */,
@@ -477,6 +508,7 @@
 				29E501082360564100F1D10F /* ConversationTableViewCell.swift in Sources */,
 				29EF18302364EABC00A7BAFE /* UserInfoHeader.swift in Sources */,
 				29EF1837236592AD00A7BAFE /* Extensions.swift in Sources */,
+				29CDBFBE236AF6C8004664FE /* OrderDetailViewController.swift in Sources */,
 				29E50103235F3F5500F1D10F /* SettingsViewController.swift in Sources */,
 				29C46094234DE8F100AEBD00 /* AppDelegate.swift in Sources */,
 				29E5010D23606A8300F1D10F /* OrdersTableViewCell.swift in Sources */,

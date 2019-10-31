@@ -10,16 +10,44 @@ import UIKit
 import FanMenu
 import Macaw
 
-class EditMenuViewController: UIViewController {
+protocol Edit: class {
+    func edit(old order: Order, to newOrder: Order)
+    func delete(order: Order)
+}
+
+
+class EditMenuViewController: BaseViewController, Edit {
+    func delete(order: Order) {
+        if let index = self.ordersList.firstIndex(of: order){
+            self.ordersList.remove(at: index)
+            self.tableView.reloadData()
+        }
+    }
+    
+    func edit(old order: Order, to newOrder: Order) {
+        
+        if let index = self.ordersList.firstIndex(of: order){
+            self.ordersList[index] = newOrder
+            self.tableView.reloadData()
+        }
+    }
+    
+
+    
     
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var fanMenu: FanMenu!
     
-    var ordersList = [Order]()
+    var ordersList = [
+        Order(title: "Entrega de combustivel", description: "Entrega de combustivel feita no posto #3456 BP lda, apenas gasolina e gasolio aditivado. Remessas de 10 000L cada poste.", address: "R. do Bairro da Mina, 6000-032 Castelo Branco", date: Date(), type: .assignment, status: .waiting),
+        Order(title: "Venda de pacote casa", description: "Pacote casa MEO40, com internet (100/100), TV (120 canais s/ box), chamadas internacionais com roaming ativo aut.", address: "", date: Date(), type: .sales, status: .closed),
+        Order(title: "Mudança de casa", description: "Montagem do pacote unlimited, cliente ja tem box (mudanca de casa), PDO ja instalado na rua", address: "Rua Praceta Egas Manuel Valente, nº4, 1ºdrt", date: Date(), type: .tech, status: .inProgress)
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Services"
         self.tableView.delegate = self
         self.tableView.dataSource = self
         OrdersTableViewCell.register(on: self.tableView)
@@ -53,8 +81,7 @@ class EditMenuViewController: UIViewController {
         
         
         
-        fanMenu.onItemDidClick = { [weak self] button in
-            guard let self = self else { return }
+        fanMenu.onItemDidClick = {  button in
             if button.id == "main" { return }
             
             let alert : UIAlertController!
@@ -62,6 +89,7 @@ class EditMenuViewController: UIViewController {
             switch button.id {
                 case "sells":
                     alert = UIAlertController(title: OrderType.sales.typeMessage, message: "Insert details", preferredStyle: .alert)
+                    //textField with configurations
                case "orders":
                     alert = UIAlertController(title: OrderType.assignment.typeMessage, message: "Insert details", preferredStyle: .alert)
                case "tech":
@@ -73,18 +101,20 @@ class EditMenuViewController: UIViewController {
                   
             alert.addTextField { textField in
                 textField.placeholder = "Title"
+                textField.font = .systemFont(ofSize: 20)
             }
             
             alert.addTextField { textField in
                 textField.placeholder = "Description"
+                textField.font = .systemFont(ofSize: 20)
             }
             
             alert.addTextField { textField in
                 textField.placeholder = "Address"
+                textField.font = .systemFont(ofSize: 20)
             }
                   
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {[weak self] action in
-                guard let self = self else { return }
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                 
                 let title = alert.textFields?[0].text
                 let description = alert.textFields?[1].text
@@ -94,7 +124,7 @@ class EditMenuViewController: UIViewController {
                 if title!.isEmpty || description!.isEmpty
                 {
                     
-                    let alertUnsuccess = UIAlertController(title: "Email malformed", message: "Please try again", preferredStyle: .alert)
+                    let alertUnsuccess = UIAlertController(title: "Required fields missing", message: "Title and description are mandatory!", preferredStyle: .alert)
                     alertUnsuccess.addAction(UIAlertAction(title: "OK", style: .default))
                     self.present(alertUnsuccess, animated: true, completion: nil)
                     
@@ -103,13 +133,13 @@ class EditMenuViewController: UIViewController {
                 
                     switch button.id {
                        case "sells":
-                        let saleOrder = Order(title: title ?? "", description: description ?? "", date: Date(), type: .sales, status: .waiting)
+                        let saleOrder = Order(title: title ?? "", description: description ?? "", address: address ?? "", date: Date(), type: .sales, status: .waiting)
                            self.ordersList.append(saleOrder)
                        case "orders":
-                        let ordersOrder = Order(title: title ?? "", description: description ?? "", date: Date(), type: .assignment, status: .waiting)
+                        let ordersOrder = Order(title: title ?? "", description: description ?? "", address: address ?? "", date: Date(), type: .assignment, status: .waiting)
                            self.ordersList.append(ordersOrder)
                        case "tech":
-                        let techOrder = Order(title: title ?? "", description: description ?? "", date: Date(), type: .tech, status: .waiting)
+                        let techOrder = Order(title: title ?? "", description: description ?? "", address: address ?? "", date: Date(), type: .tech, status: .waiting)
                            self.ordersList.append(techOrder)
                        default:
                            ()
@@ -174,6 +204,10 @@ extension EditMenuViewController: UITableViewDataSource
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = OrderDetailViewController(order: self.ordersList[indexPath.row])
+        vc.delegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
 }

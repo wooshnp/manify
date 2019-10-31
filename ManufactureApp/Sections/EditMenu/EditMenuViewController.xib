@@ -29,14 +29,14 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tableView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFU-gn-USY" userLabel="funMenu" customClass="FanMenu" customModule="FanMenu">
-                            <rect key="frame" x="20" y="600" width="374" height="218"/>
+                            <rect key="frame" x="20" y="535" width="374" height="283"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" name="backgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="bFU-gn-USY" secondAttribute="trailing" constant="20" id="E27-tP-g2p"/>
-                        <constraint firstItem="bFU-gn-USY" firstAttribute="top" secondItem="Xru-Bp-9Id" secondAttribute="top" constant="600" id="K9Y-lg-P04"/>
+                        <constraint firstItem="bFU-gn-USY" firstAttribute="top" secondItem="Xru-Bp-9Id" secondAttribute="top" constant="535" id="K9Y-lg-P04"/>
                         <constraint firstAttribute="bottom" secondItem="bFU-gn-USY" secondAttribute="bottom" id="KJa-YJ-fJT"/>
                         <constraint firstItem="jG0-c3-6q3" firstAttribute="leading" secondItem="Xru-Bp-9Id" secondAttribute="leading" id="SnU-JF-4GY"/>
                         <constraint firstAttribute="trailing" secondItem="jG0-c3-6q3" secondAttribute="trailing" id="V6d-jD-PO4"/>

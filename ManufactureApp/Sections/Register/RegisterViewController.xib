@@ -71,6 +71,9 @@
                             <state key="normal" title="Register">
                                 <color key="titleColor" name="backgroundColor"/>
                             </state>
+                            <connections>
+                                <action selector="registerWasPressed:" destination="-1" eventType="touchUpInside" id="zk9-dX-ogl"/>
+                            </connections>
                         </button>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KDZ-ug-1dJ" userLabel="name" customClass="TextField" customModule="ManufactureApp" customModuleProvider="target">
                             <rect key="frame" x="40" y="270" width="157" height="57"/>

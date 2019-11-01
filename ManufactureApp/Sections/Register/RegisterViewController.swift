@@ -48,6 +48,7 @@ class RegisterViewController: BaseViewController {
     
     @IBOutlet weak var usrEmail: TextField! {
         didSet {
+                usrEmail.keyboardType = .emailAddress
                usrEmail.tintColor = UIColor.lightGray
                usrEmail.setIcon(#imageLiteral(resourceName: "baseline_email_black_18dp-1"))
                usrEmail.attributedPlaceholder = NSMutableAttributedString(string: usrEmail.placeholder ?? " ", attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "darkBlueColor")!])

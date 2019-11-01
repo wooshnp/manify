@@ -22,6 +22,7 @@ class LoginViewController: BaseViewController {
     //MARK: icon setup on textFields
     @IBOutlet weak var iconTextField: TextField! {
         didSet {
+            iconTextField.keyboardType = .emailAddress
             iconTextField.tintColor = UIColor.lightGray
             iconTextField.setIcon(#imageLiteral(resourceName: "icons8-user-50"))
             iconTextField.attributedPlaceholder = NSMutableAttributedString(string: iconTextField.placeholder ?? " ", attributes: [NSAttributedString.Key.foregroundColor: UIColor(named: "darkBlueColor")!])
@@ -64,7 +65,7 @@ class LoginViewController: BaseViewController {
     
     
     @IBAction func loginWasPressed(_ sender: Any) {
-  
+
         if iconTextField.text != "nuno@manify.pt", passwordTextField.text != "qwerty" {
             let alert = UIAlertController(title: "Error", message: "Your email or password is incorrect! Please try again.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
